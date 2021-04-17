@@ -23,10 +23,7 @@
                 <br>
         </samp>
         <!-- Programming Languages -->
-        <!-- Code logo -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Code"
-                        src="https://img.shields.io/badge/-code-000000?style=flat&logo=Plex&logoColor=white">
-        </a>
+        
         <!-- HTML -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="HTML"
                         src="https://img.shields.io/badge/-HTML-E34F26?style=flat&logo=HTML5&logoColor=white">
