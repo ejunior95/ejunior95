@@ -55,14 +55,17 @@
 
 <!-- Details Section-->
 <details align="center">
-    <summary> <samp>&#9776; See my GitHub Stats</samp></summary>
+    <summary> <samp>See my GitHub Stats</samp></summary>
     <p align="center">
         <br>
         <!-- Activity Widget -->
         <img alt="Junior's GitHub Stats"
                 src="https://github-readme-stats.vercel.app/api?username=ejunior95&show_icons=true&theme=react" />
         <br>
-        <!-- Social Links -->
+    </p>
+</details>
+
+<!-- Social Links -->
         <p>Find me on</p>
         <!-- Gmail -->
         <a href="mailto:e.junior95@gmail.com" target="_blank"><img alt="Gmail"
@@ -80,8 +83,7 @@
         <a href="https://www.linkedin.com/in/deved-jr100/" target="_blank"><img alt="Linkedin"
                 src="https://img.shields.io/badge/-Linkedin-0A66C2?style=flat-square&logo=Linkedin&logoColor=white">
         </a>
-    </p>
-</details>
+
 <br>
 
 <!-- Footer -->
