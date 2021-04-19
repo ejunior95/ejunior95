@@ -7,7 +7,7 @@
 <br>
 <!-- Intro  -->
 <h3 align="center">
-        <samp>&gt; < Hello World />!, I am
+        <samp>< Hello World />!, I am
                 <b><a target="_blank" href="#">Edvaldo de Ramos Junior</a></b>
         </samp>
 </h3>
@@ -77,7 +77,7 @@
                 src="https://img.shields.io/badge/-Behance-1769FF?style=flat-square&logo=Behance&logoColor=white">
         </a>
         <!-- Linkedin -->
-        <a href="https://www.linkedin.com/in/edvaldo-de-ramos-junior-5bb4ab19a/" target="_blank"><img alt="Linkedin"
+        <a href="https://www.linkedin.com/in/deved-jr100/" target="_blank"><img alt="Linkedin"
                 src="https://img.shields.io/badge/-Linkedin-0A66C2?style=flat-square&logo=Linkedin&logoColor=white">
         </a>
     </p>
