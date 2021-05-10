@@ -47,8 +47,12 @@
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="ReactNative"
                         src="https://img.shields.io/badge/-ReactNative-0088CC?style=flat&logo=React&logoColor=white">
         </a>
+        <!-- NextJS -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NextJS"
+                        src="https://img.shields.io/badge/-NextJS-000000?style=flat&logo=Next.js&logoColor=#0082C9">
+        </a>
         <!-- ThreeJS -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="VB.NET"
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="ThreeJS"
                         src="https://img.shields.io/badge/-ThreeJS-000000?style=flat&logo=Three.js&logoColor=#FFFFFF">
         </a>
         <!-- VB.NET -->
