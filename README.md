@@ -97,6 +97,6 @@
     <p align="center">
         ════ ⋆★⋆ ════
         <br>
-        "Happy Hacking!"
+        "Always Hacking!"
     </p>
 </samp>
