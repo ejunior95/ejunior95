@@ -57,7 +57,7 @@
         </a>
         <!-- Adobe Photoshop -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Photoshop"
-                        src="https://img.shields.io/badge/-Adobe-Photoshop-31A8FF?style=flat&logo=Adobe-Photoshop&logoColor=#FFFFFF">
+                        src="https://img.shields.io/badge/-Adobe-Photoshop-31A8FF?style=flat&logo=AdobePhotoshop&logoColor=#FFFFFF">
         </a>
         <!-- VB.NET -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="VB.NET"
