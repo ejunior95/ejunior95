@@ -53,11 +53,7 @@
         </a>
         <!-- NodeJS -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NodeJS"
-                        src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=NODE.js&logoColor=#FFFFFF">
-        </a>
-        <!-- NodeTS -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NodeTS"
-                        src="https://img.shields.io/badge/-Node.ts-3178C6?style=flat&logo=ts-NODE&logoColor=#FFFFFF">
+                        src="https://img.shields.io/badge/-Nodejs-339933?style=flat&logo=NODE.js&logoColor=white">
         </a>
         <!-- Docker -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Docker"
@@ -65,7 +61,7 @@
         </a>
         <!-- Adobe Photoshop -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Photoshop"
-                        src="https://img.shields.io/badge/-AdobePhotoshop-31A8FF?style=flat&logo=Adobe-Photoshop&logoColor=#FFFFFF">
+                        src="https://img.shields.io/badge/-AdobePhotoshop-0672CB?style=flat&logo=Adobe-Photoshop&logoColor=white">
         </a>
         <!-- VB.NET -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="VB.NET"
