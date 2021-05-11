@@ -67,6 +67,10 @@
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Photoshop"
                         src="https://img.shields.io/badge/-AdobePhotoshop-0672CB?style=flat&logo=Adobe-Photoshop&logoColor=white">
         </a>
+        <!-- Figma -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Figma"
+                        src="https://img.shields.io/badge/-Figma-F24E1E?style=flat&logo=Figma&logoColor=white">
+        </a>
         <!-- VB.NET -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="VB.NET"
                         src="https://img.shields.io/badge/-VisualBasic-00979D?style=flat&logo=Microsoft&logoColor=#5E5E5E">
