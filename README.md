@@ -51,13 +51,21 @@
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="ThreeJS"
                         src="https://img.shields.io/badge/-ThreeJS-000000?style=flat&logo=Three.js&logoColor=#FFFFFF">
         </a>
+        <!-- NodeJS -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NodeJS"
+                        src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=Node.js&logoColor=#FFFFFF">
+        </a>
+        <!-- NodeTS -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NodeTS"
+                        src="https://img.shields.io/badge/-Node.ts-3178C6?style=flat&logo=ts-node&logoColor=#FFFFFF">
+        </a>
         <!-- Docker -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Docker"
-                        src="https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=Docker&logoColor=#FFFFFF">
+                        src="https://img.shields.io/badge/-Docker-31A8FF?style=flat&logo=Docker&logoColor=#FFFFFF">
         </a>
         <!-- Adobe Photoshop -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Photoshop"
-                        src="https://img.shields.io/badge/-Adobe-Photoshop-31A8FF?style=flat&logo=AdobePhotoshop&logoColor=#FFFFFF">
+                        src="https://img.shields.io/badge/-AdobePhotoshop-31A8FF?style=flat&logo=Adobe-Photoshop&logoColor=#FFFFFF">
         </a>
         <!-- VB.NET -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="VB.NET"
