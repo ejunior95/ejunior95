@@ -53,15 +53,15 @@
         </a>
         <!-- NodeJS -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NodeJS"
-                        src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=Node.js&logoColor=#FFFFFF">
+                        src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=NODE.js&logoColor=#FFFFFF">
         </a>
         <!-- NodeTS -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NodeTS"
-                        src="https://img.shields.io/badge/-Node.ts-3178C6?style=flat&logo=ts-node&logoColor=#FFFFFF">
+                        src="https://img.shields.io/badge/-Node.ts-3178C6?style=flat&logo=ts-NODE&logoColor=#FFFFFF">
         </a>
         <!-- Docker -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Docker"
-                        src="https://img.shields.io/badge/-Docker-31A8FF?style=flat&logo=Docker&logoColor=#FFFFFF">
+                        src="https://img.shields.io/badge/-Docker-31A8FF?style=flat&logo=Docker&logoColor=white">
         </a>
         <!-- Adobe Photoshop -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Photoshop"
