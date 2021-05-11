@@ -35,6 +35,10 @@
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="JavaScript"
                         src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black">
         </a>
+        <!-- TypeScript -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="TypeScript"
+                        src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=black">
+        </a>
         <!-- ReactJS -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="React"
                         src="https://img.shields.io/badge/-React-3776AB?style=flat&logo=React&logoColor=white">
