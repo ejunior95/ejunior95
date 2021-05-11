@@ -33,7 +33,7 @@
         </a>
         <!-- JavaScript -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="JavaScript"
-                        src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white">
+                        src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black">
         </a>
         <!-- TypeScript -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="TypeScript"
