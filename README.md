@@ -108,6 +108,9 @@
 </details>
 <br>
 
+![github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=ejunior95&show_icons=true&theme=react)
+
+<br>
 <!-- Footer -->
 <samp>
     <p align="center">
