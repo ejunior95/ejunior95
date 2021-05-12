@@ -86,7 +86,8 @@
         <img alt="Junior's GitHub Stats"
                 src="https://github-readme-stats.vercel.app/api?username=ejunior95&show_icons=true&theme=react" />
         <br>
-            ![github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=ejunior95&show_icons=true&theme=react) 
+            <img alt="Top languages"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=ejunior95&show_icons=true&theme=react" /> 
         <br>    
         <!-- Social Links -->
         <p>Find me on</p>
