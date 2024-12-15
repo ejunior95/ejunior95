@@ -16,9 +16,9 @@
 <p align="center">
         <!-- Organisation  -->
         <samp>
-                「 From Sorocaba, SP (Brasil) 」
+                「 From Sorocaba, São Paulo (Brasil) 」
                 <br>
-                「 Front-End Developer, Computer Science Student @<b> Universidade Paulista - UNIP</b> 」
+                「 Senior Full Stack Developer, Computer Science Student @<b> Universidade Paulista - UNIP</b> 」
                 <br>
                 <br>
         </samp>
