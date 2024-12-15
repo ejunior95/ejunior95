@@ -2,9 +2,6 @@
 <!-- April 16, 2021 -->
 <!-- leave a STAR, if you like it ! -->
 
-<!-- Profile Views Counter -->
-![Profile Views](https://gpvc.arturio.dev/ejunior95?v=3)
-<br>
 <!-- Intro  -->
 <h3 align="center">
         <samp>< Hello World />!, I am
