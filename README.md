@@ -90,10 +90,6 @@
         <a href="https://www.behance.net/ejunior95" target="_blank"><img alt="Behance"
                 src="https://img.shields.io/badge/-Behance-1769FF?style=flat-square&logo=Behance&logoColor=white">
         </a>
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/junior2p/" target="_blank"><img alt="Facebook"
-                src="https://img.shields.io/badge/-Facebook-1877F2?style=flat-square&logo=Facebook&logoColor=white">
-        </a>
     </p>
 </div>
 <br>
