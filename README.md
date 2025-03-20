@@ -4,8 +4,8 @@
 
 <!-- Intro  -->
 <h3 align="center">
-        <samp>< Hello World />!, I am
-                <b><a target="_blank" href="#">Edvaldo de Ramos Junior</a></b>
+        <samp>< Hello World />, I am
+                <b><a target="_blank" href="#">Edvaldo Junior 😉</a></b>
         </samp>
 </h3>
 <br>
@@ -15,19 +15,11 @@
         <samp>
                 「 From Sorocaba, São Paulo (Brasil) 」
                 <br>
-                「 Senior Full Stack Developer, Computer Science Student @<b> Universidade Paulista - UNIP</b> 」
+                「 Senior Fullstack Developer, Computer Science Student @<b> Universidade Paulista - UNIP</b> 」
                 <br>
                 <br>
         </samp>
         <!-- Programming Languages -->
-        <!-- HTML -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="HTML"
-                        src="https://img.shields.io/badge/-HTML-E34F26?style=flat&logo=HTML5&logoColor=white">
-        </a>
-        <!-- CSS  -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="CSS"
-                        src="https://img.shields.io/badge/-CSS-1572B6?style=flat&logo=CSS3&logoColor=white">
-        </a>
         <!-- JavaScript -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="JavaScript"
                         src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black">
@@ -35,22 +27,6 @@
         <!-- TypeScript -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="TypeScript"
                         src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white">
-        </a>
-        <!-- ReactJS -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="React"
-                        src="https://img.shields.io/badge/-React-3776AB?style=flat&logo=React&logoColor=white">
-        </a>
-        <!-- React Native -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="ReactNative"
-                        src="https://img.shields.io/badge/-ReactNative-0088CC?style=flat&logo=React&logoColor=white">
-        </a>
-        <!-- NextJS -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NextJS"
-                        src="https://img.shields.io/badge/-NextJS-000000?style=flat&logo=Next.js&logoColor=#0082C9">
-        </a>
-        <!-- ThreeJS -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="ThreeJS"
-                        src="https://img.shields.io/badge/-ThreeJS-000000?style=flat&logo=Three.js&logoColor=#FFFFFF">
         </a>
         <!-- NodeJS -->
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NodeJS"
@@ -60,20 +36,37 @@
         <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Docker"
                         src="https://img.shields.io/badge/-Docker-31A8FF?style=flat&logo=Docker&logoColor=white">
         </a>
-        <!-- Figma -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Figma"
-                        src="https://img.shields.io/badge/-Figma-F24E1E?style=flat&logo=Figma&logoColor=white">
+        <!-- HTML -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="HTML"
+                        src="https://img.shields.io/badge/-HTML-E34F26?style=flat&logo=HTML5&logoColor=white">
         </a>
-        <!-- VB.NET -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="VB.NET"
-                        src="https://img.shields.io/badge/-VisualBasic-00979D?style=flat&logo=Microsoft&logoColor=#5E5E5E">
+        <!-- CSS  -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="CSS"
+                        src="https://img.shields.io/badge/-CSS-1572B6?style=flat&logo=CSS3&logoColor=white">
+        </a>
+        <!-- ReactJS -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="React"
+                        src="https://img.shields.io/badge/-React-3776AB?style=flat&logo=React&logoColor=white">
+        </a>
+        <!-- Angular -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Angular"
+                        src="https://img.shields.io/badge/-Angular-D8624B?style=flat&logo=Angular&logoColor=white">
+        </a>
+        <!-- React Native -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="ReactNative"
+                        src="https://img.shields.io/badge/-ReactNative-0088CC?style=flat&logo=React&logoColor=white">
+        </a>
+        <!-- NextJS -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NextJS"
+                        src="https://img.shields.io/badge/-NextJS-353535?style=flat&logo=Next.js&logoColor=#0082C9">
+        </a>
+        <!-- ThreeJS -->
+        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="ThreeJS"
+                        src="https://img.shields.io/badge/-ThreeJS-000000?style=flat&logo=Three.js&logoColor=#FFFFFF">
         </a>
 </p>
 
-<!-- Details Section-->
-<details align="center">
-    <summary> <samp>See my GitHub Stats</samp></summary>
-    <p align="center">
+<p align="center">
         <br>
         <!-- Activity Widget -->
         <img alt="Junior's GitHub Stats"
@@ -82,8 +75,9 @@
             <img alt="Top languages"
                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=ejunior95&show_icons=true&theme=react" /> 
         <br>    
-        <!-- Social Links -->
-        <p>Find me on</p>
+<!-- Social Links -->
+<div align="center">
+<p align="center">Find me on</p>
         <!-- Gmail -->
         <a href="mailto:e.junior95@gmail.com" target="_blank"><img alt="Gmail"
                 src="https://img.shields.io/badge/-Gmail-EA4335?style=flat-square&logo=Gmail&logoColor=white">
@@ -101,15 +95,15 @@
                 src="https://img.shields.io/badge/-Facebook-1877F2?style=flat-square&logo=Facebook&logoColor=white">
         </a>
     </p>
-</details>
+</div>
 <br>
 
 <br>
 <!-- Footer -->
-<samp>
+<div  align="center">
     <p align="center">
         ════ ⋆★⋆ ════
         <br>
-        "Always Hacking!"
+        "Life Coding!"
     </p>
-</samp>
+</div>
