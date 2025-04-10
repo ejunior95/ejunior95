@@ -5,7 +5,7 @@
 <!-- Intro  -->
 <h3 align="center">
         <samp>< Hello World />, I am
-                <b><a target="_blank" href="#">Edvaldo Junior 😉</a></b>
+                <b><a target="_blank" href="https://www.linkedin.com/in/deved-jr100/">Edvaldo Junior 😉</a></b>
         </samp>
 </h3>
 <br>
