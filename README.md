@@ -68,10 +68,6 @@
 
 <p align="center">
         <br>
-        <!-- Activity Widget -->
-        <img alt="Junior's GitHub Stats"
-                src="https://github-readme-stats.vercel.app/api?username=ejunior95&show_icons=true&theme=react" />
-        <br>
             <img alt="Top languages"
                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=ejunior95&show_icons=true&theme=react" /> 
         <br>    
@@ -86,15 +82,10 @@
         <a href="https://www.linkedin.com/in/deved-jr100/" target="_blank"><img alt="Linkedin"
                 src="https://img.shields.io/badge/-Linkedin-0A66C2?style=flat-square&logo=Linkedin&logoColor=white">
         </a>
-        <!-- Behance -->
-        <a href="https://www.behance.net/ejunior95" target="_blank"><img alt="Behance"
-                src="https://img.shields.io/badge/-Behance-1769FF?style=flat-square&logo=Behance&logoColor=white">
-        </a>
     </p>
 </div>
 <br>
 
-<br>
 <!-- Footer -->
 <div  align="center">
     <p align="center">
@@ -103,3 +94,4 @@
         "Life Coding!"
     </p>
 </div>
+
