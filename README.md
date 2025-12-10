@@ -66,11 +66,7 @@
         </a>
 </p>
 
-<p align="center">
-        <br>
-            <img alt="Top languages"
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=ejunior95&show_icons=true&theme=react" /> 
-        <br>    
+<p align="center">   
 <!-- Social Links -->
 <div align="center">
 <p align="center">Find me on</p>
@@ -94,4 +90,5 @@
         "Life Coding!"
     </p>
 </div>
+
 
