@@ -74,12 +74,37 @@ const edvaldoJunior = {
 
 ## 💼 Experiência Profissional
 
-| Empresa | Cargo | Período |
-|---------|-------|---------|
-| **CAST** | Senior Fullstack Developer (Angular & Node.js) | 2022 - Presente |
-| **Revelo** | AI Trainer (freelance) | 2025 |
-| **Infosys** | Backend Developer (Node.js) | 2021 - 2022 |
-| **Farma Ponte** | Fullstack Developer (React) | 2020 - 2021 |
+<table align="center" width="100%">
+  <thead>
+    <tr>
+      <th align="left">Empresa</th>
+      <th align="left">Cargo</th>
+      <th align="center">Período</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>CAST</strong></td>
+      <td>Senior Fullstack Developer (Angular & Node.js)</td>
+      <td align="center">2022 - Presente</td>
+    </tr>
+    <tr>
+      <td><strong>Revelo</strong></td>
+      <td>AI Trainer (freelance)</td>
+      <td align="center">2025</td>
+    </tr>
+    <tr>
+      <td><strong>Infosys</strong></td>
+      <td>Backend Developer (Node.js)</td>
+      <td align="center">2021 - 2022</td>
+    </tr>
+    <tr>
+      <td><strong>Farma Ponte</strong></td>
+      <td>Fullstack Developer (React)</td>
+      <td align="center">2020 - 2021</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
