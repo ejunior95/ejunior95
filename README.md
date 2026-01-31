@@ -26,14 +26,14 @@
 const edvaldoJunior = {
   location: "Sorocaba, São Paulo - Brasil",
   role: "Senior Fullstack Developer",
-  company: "CAST Group",
+  company: "CAST",
   experience: "6+ years",
-  education: "Análise de Sistemas de Computação @ UNIP",
+  education: "Análise e Desenvolvimento de Sistemas @ UNIP",
   focus: ["Backend Development", "Frontend Architecture", "AI & LLM"]
 };
 ```
 
-🚀 Atualmente trabalho no projeto **QTeste do Banco do Brasil**, desenvolvendo plataformas para automação de testes e melhorias de qualidade de código.
+🚀 Atualmente trabalho no projeto **Divida Técnica, na Plataforma de Qualidade no cliente Banco do Brasil**, desenvolvendo plataformas para automação de testes e melhorias de qualidade de código.
 
 ---
 
@@ -89,8 +89,8 @@ const edvaldoJunior = {
 
 | Empresa | Cargo | Período |
 |---------|-------|---------|
-| **CAST Group** | Senior Fullstack Developer (Angular & Node.js) | 2022 - Presente |
-| **Revelo** | AI Trainer | 2025 |
+| **CAST** | Senior Fullstack Developer (Angular & Node.js) | 2022 - Presente |
+| **Revelo** | AI Trainer (freelance) | 2025 |
 | **Infosys** | Backend Developer (Node.js) | 2021 - 2022 |
 | **Farma Ponte** | Fullstack Developer (React) | 2020 - 2021 |
 
