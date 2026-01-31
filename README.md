@@ -1,94 +1,114 @@
 ﻿<!-- https://github.com/ejunior95/ -->
-<!-- April 16, 2021 -->
-<!-- leave a STAR, if you like it ! -->
 
-<!-- Intro  -->
-<h3 align="center">
-        <samp>< Hello World />, I am
-                <b><a target="_blank" href="https://ejunior95.com/">Edvaldo Junior 😉</a></b>
-        </samp>
-</h3>
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=B4FF39&center=true&vCenter=true&width=600&lines=%3C+Hello+World+%2F%3E;Edvaldo+de+Ramos+Junior;Senior+Fullstack+Developer" alt="Typing SVG" />
+</div>
+
 <br>
 
 <p align="center">
-        <!-- Organisation  -->
-        <samp>
-                「 From Sorocaba, São Paulo (Brasil) 」
-                <br>
-                「 Senior Fullstack Developer, Computer Science Student @<b> Universidade Paulista - UNIP</b> 」
-                <br>
-                <br>
-        </samp>
-        <!-- Programming Languages -->
-        <!-- JavaScript -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="JavaScript"
-                        src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black">
-        </a>
-        <!-- TypeScript -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="TypeScript"
-                        src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white">
-        </a>
-        <!-- NodeJS -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NodeJS"
-                        src="https://img.shields.io/badge/-Nodejs-339933?style=flat&logo=NODE.js&logoColor=white">
-        </a>
-        <!-- Docker -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Docker"
-                        src="https://img.shields.io/badge/-Docker-31A8FF?style=flat&logo=Docker&logoColor=white">
-        </a>
-        <!-- HTML -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="HTML"
-                        src="https://img.shields.io/badge/-HTML-E34F26?style=flat&logo=HTML5&logoColor=white">
-        </a>
-        <!-- CSS  -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="CSS"
-                        src="https://img.shields.io/badge/-CSS-1572B6?style=flat&logo=CSS3&logoColor=white">
-        </a>
-        <!-- ReactJS -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="React"
-                        src="https://img.shields.io/badge/-React-3776AB?style=flat&logo=React&logoColor=white">
-        </a>
-        <!-- Angular -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="Angular"
-                        src="https://img.shields.io/badge/-Angular-D8624B?style=flat&logo=Angular&logoColor=white">
-        </a>
-        <!-- React Native -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="ReactNative"
-                        src="https://img.shields.io/badge/-ReactNative-0088CC?style=flat&logo=React&logoColor=white">
-        </a>
-        <!-- NextJS -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="NextJS"
-                        src="https://img.shields.io/badge/-NextJS-353535?style=flat&logo=Next.js&logoColor=#0082C9">
-        </a>
-        <!-- ThreeJS -->
-        <a href="https://github.com/ejunior95?tab=repositories" target="_blank"><img alt="ThreeJS"
-                        src="https://img.shields.io/badge/-ThreeJS-000000?style=flat&logo=Three.js&logoColor=#FFFFFF">
-        </a>
+  <a href="https://ejunior95.com" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-ejunior95.com-b4ff39?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
+  </a>
+  <a href="https://www.linkedin.com/in/deved-jr100/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-deved--jr100-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:e.junior95@gmail.com">
+    <img src="https://img.shields.io/badge/Email-e.junior95@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
 </p>
 
-<p align="center">   
-<!-- Social Links -->
+---
+
+## 👨‍💻 Sobre Mim
+
+```typescript
+const edvaldoJunior = {
+  location: "Sorocaba, São Paulo - Brasil",
+  role: "Senior Fullstack Developer",
+  company: "CAST Group",
+  experience: "6+ years",
+  education: "Análise de Sistemas de Computação @ UNIP",
+  focus: ["Backend Development", "Frontend Architecture", "AI & LLM"]
+};
+```
+
+🚀 Atualmente trabalho no projeto **QTeste do Banco do Brasil**, desenvolvendo plataformas para automação de testes e melhorias de qualidade de código.
+
+---
+
+## 🛠️ Tech Stack
+
 <div align="center">
-<p align="center">Find me on</p>
-        <!-- Gmail -->
-        <a href="mailto:e.junior95@gmail.com" target="_blank"><img alt="Gmail"
-                src="https://img.shields.io/badge/-Gmail-EA4335?style=flat-square&logo=Gmail&logoColor=white">
-        </a>
-        <!-- Linkedin -->
-        <a href="https://www.linkedin.com/in/deved-jr100/" target="_blank"><img alt="Linkedin"
-                src="https://img.shields.io/badge/-Linkedin-0A66C2?style=flat-square&logo=Linkedin&logoColor=white">
-        </a>
-    </p>
+
+### Languages & Frameworks
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+
+### Databases
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+
+### DevOps & Cloud
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![OpenShift](https://img.shields.io/badge/OpenShift-EE0000?style=for-the-badge&logo=red-hat-open-shift&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+### AI & Tools
+![LLM](https://img.shields.io/badge/LLM-412991?style=for-the-badge&logo=openai&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-b4ff39?style=for-the-badge&logo=anthropic&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
 </div>
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ejunior95&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0a0a&title_color=b4ff39&icon_color=b4ff39"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ejunior95&layout=compact&langs_count=8&theme=chartreuse-dark&hide_border=true&bg_color=0a0a0a&title_color=b4ff39"/>
+</div>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ejunior95&theme=chartreuse-dark&hide_border=true&background=0a0a0a&ring=b4ff39&fire=b4ff39&currStreakLabel=b4ff39" alt="GitHub Streak"/>
+</div>
+
+---
+
+## 💼 Experiência Profissional
+
+| Empresa | Cargo | Período |
+|---------|-------|---------|
+| **CAST Group** | Senior Fullstack Developer (Angular & Node.js) | 2022 - Presente |
+| **Revelo** | AI Trainer | 2025 |
+| **Infosys** | Backend Developer (Node.js) | 2021 - 2022 |
+| **Farma Ponte** | Fullstack Developer (React) | 2020 - 2021 |
+
+---
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=ejunior95&color=b4ff39&style=for-the-badge&label=Profile+Views" alt="Profile Views"/>
+</div>
+
 <br>
 
-<!-- Footer -->
-<div  align="center">
-    <p align="center">
-        ════ ⋆★⋆ ════
-        <br>
-        "Life Coding!"
-    </p>
+<div align="center">
+  <samp>
+    ════ ⋆★⋆ ════
+    <br>
+    <b>"Life Coding!"</b>
+  </samp>
 </div>
+
 
 
