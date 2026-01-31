@@ -72,19 +72,6 @@ const edvaldoJunior = {
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ejunior95&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0a0a&title_color=b4ff39&icon_color=b4ff39"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ejunior95&layout=compact&langs_count=8&theme=chartreuse-dark&hide_border=true&bg_color=0a0a0a&title_color=b4ff39"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ejunior95&theme=chartreuse-dark&hide_border=true&background=0a0a0a&ring=b4ff39&fire=b4ff39&currStreakLabel=b4ff39" alt="GitHub Streak"/>
-</div>
-
----
-
 ## 💼 Experiência Profissional
 
 | Empresa | Cargo | Período |
@@ -97,7 +84,7 @@ const edvaldoJunior = {
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=ejunior95&color=b4ff39&style=for-the-badge&label=Profile+Views" alt="Profile Views"/>
+  <img src="https://komarev.com/ghpvc/?username=ejunior95&color=012dcf&style=for-the-badge&label=Profile+Views" alt="Profile Views"/>
 </div>
 
 <br>
