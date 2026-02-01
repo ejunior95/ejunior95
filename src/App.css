@@ -429,13 +429,22 @@
 .project-card {
   background: #111;
   border: 1px solid #1a1a1a;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem;
   position: relative;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .project-card:hover {
   border-color: #09ec42;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .project-header {
@@ -480,14 +489,12 @@
   font-size: 0.7rem;
   color: #fff;
   line-height: 1.8;
-  margin-bottom: 1.5rem;
 }
 
 .project-tech {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 2rem;
 }
 
 .tech-tag {
@@ -501,14 +508,13 @@
 .project-preview {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
 }
 
 /* CRT Monitor Styles */
 .crt-monitor {
   position: relative;
-  width: 350px;
-  height: 280px;
+  width: 420px;
+  height: 320px;
   background: linear-gradient(135deg, #d6d6d6, #aeaeae);
   border-radius: 20px 20px 40px 40px;
   padding: 20px 25px 40px 25px;
@@ -768,10 +774,32 @@
   .hero-title {
     font-size: 2.5rem;
   }
+  
+  /* Layout lado a lado para projects */
+  .project-card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 3rem;
+  }
+  
+  .project-content {
+    flex: 1;
+    max-width: 60%;
+  }
+  
+  .project-preview {
+    flex: 0 0 auto;
+  }
+  
+  .crt-monitor {
+    width: 480px;
+    height: 360px;
+  }
 }
 
 /* Desktop (1200px - 1400px) */
-@media (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1400px) {
   .desktop-header {
     padding: 1.5rem 2rem;
   }
@@ -786,6 +814,28 @@
   
   .nav a {
     font-size: 0.8rem;
+  }
+  
+  /* Layout lado a lado para projects */
+  .project-card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+    padding: 2.5rem;
+  }
+  
+  .project-content {
+    flex: 1;
+    max-width: 60%;
+  }
+  
+  .project-preview {
+    flex: 0 0 auto;
+  }
+  
+  .crt-monitor {
+    width: 420px;
+    height: 320px;
   }
 }
 
