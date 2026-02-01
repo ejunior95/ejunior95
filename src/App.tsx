@@ -12,6 +12,19 @@ function App() {
     setMenuOpen(false)
   }
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault()
+    closeMenu()
+    
+    // Pequeno delay para garantir que o menu feche antes do scroll
+    setTimeout(() => {
+      const element = document.getElementById(targetId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }, 100)
+  }
+
   const experiences = [
     {
       company: "CAST",
@@ -111,11 +124,11 @@ function App() {
         </button>
 
         <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
-          <a href="#about" onClick={closeMenu}>ABOUT ME</a>
-          <a href="#skills" onClick={closeMenu}>SKILLS</a>
-          <a href="#experience" onClick={closeMenu}>EXPERIENCE</a>
-          <a href="#education" onClick={closeMenu}>EDUCATION</a>
-          <a href="#contact" onClick={closeMenu}>CONTACT</a>
+          <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>ABOUT ME</a>
+          <a href="#skills" onClick={(e) => handleNavClick(e, 'skills')}>SKILLS</a>
+          <a href="#experience" onClick={(e) => handleNavClick(e, 'experience')}>EXPERIENCE</a>
+          <a href="#education" onClick={(e) => handleNavClick(e, 'education')}>EDUCATION</a>
+          <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>CONTACT</a>
         </nav>
         <div className="header-actions">
           <a href="https://www.linkedin.com/in/deved-jr100" target="_blank" rel="noopener noreferrer" className="enroll-btn">
