@@ -167,19 +167,19 @@ function App() {
           <div className="info-stats">
             <div className="stat">
               <span className="stat-label">EXPERIENCE &gt;</span>
-              <span className="stat-value">"10+ YEARS"</span>
+              <span className="stat-value">+10 YEARS</span>
             </div>
             <div className="stat">
               <span className="stat-label">PROJECTS &gt;</span>
-              <span className="stat-value highlight">10+</span>
+              <span className="stat-value highlight">+10</span>
             </div>
             <div className="stat">
               <span className="stat-label">LEVEL &gt;</span>
-              <span className="stat-value">"SENIOR"</span>
+              <span className="stat-value">SENIOR</span>
             </div>
             <div className="stat">
               <span className="stat-label">LOCATION &gt;</span>
-              <span className="stat-value">"SOROCABA, SP - BRAZIL"</span>
+              <span className="stat-value">SOROCABA, SP - BRAZIL</span>
             </div>
           </div>
           <a href="mailto:e.junior95@gmail.com" className="cta-btn">ASYNC () =&gt; CONTACT(email)</a>

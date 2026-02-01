@@ -804,6 +804,10 @@
   .hero-subtitle {
     font-size: 0.65rem;
   }
+
+  .hero-visual {
+    width: 100%;
+  }
   
   .hero-role {
     font-size: 0.7rem;
@@ -815,7 +819,8 @@
   }
   
   .code-block {
-    font-size: 0.55rem;
+    width: 100%;
+    font-size: 0.7rem;
     padding: 1rem;
     line-height: 2.2;
   }
@@ -1040,7 +1045,7 @@
   }
   
   .code-block {
-    font-size: 0.45rem;
+    font-size: 0.55rem;
     padding: 0.8rem;
     line-height: 2;
   }
