@@ -23,12 +23,15 @@
 ## 👨‍💻 Sobre Mim
 
 ```typescript
-const edvaldoJunior = {
-  location: "Sorocaba, São Paulo - Brasil",
+// developer.config.ts
+const greatDeveloper = {
+  name: "Edvaldo Junior",
+  location: "Sorocaba, São Paulo - Brazil",
   role: "Senior Fullstack Developer",
-  company: "CAST",
-  experience: "6+ years",
-  education: "Análise e Desenvolvimento de Sistemas @ UNIP",
+  currentCompany: "CAST",
+  experience: + 10 years,
+  status: "working",
+  education: "Bachelor's Degree in Computer Systems Analysis @ UNIP",
   focus: ["Backend Development", "Frontend Architecture", "AI & LLM"]
 };
 ```
