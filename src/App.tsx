@@ -1,4 +1,14 @@
 import { useState } from 'react'
+import { 
+  Clock, 
+  MapPin, 
+  Mail, 
+  Phone, 
+  Linkedin, 
+  ScrollText, 
+  Globe, 
+  ExternalLink 
+} from 'lucide-react'
 import './App.css'
 
 function App() {
@@ -304,8 +314,8 @@ function App() {
                   </div>
                   <p className="role-title">{exp.role}</p>
                   <div className="timeline-meta">
-                    <span className="meta-item">⏱ {exp.duration}</span>
-                    <span className="meta-item">📍 {exp.location}</span>
+                    <span className="meta-item"><Clock size={16} style={{ marginRight: '4px' }} /> {exp.duration}</span>
+                    <span className="meta-item"><MapPin size={16} style={{ marginRight: '4px' }} /> {exp.location}</span>
                   </div>
                   <p className="timeline-description">{exp.description}</p>
                 </div>
@@ -338,11 +348,11 @@ function App() {
           </h2>
           <div className="certifications-grid">
             <div className="cert-card">
-              <span className="cert-icon">📜</span>
+              <span className="cert-icon"><ScrollText size={24} /></span>
               <h4 className="cert-name">Google Coding Fundamentals</h4>
             </div>
             <div className="cert-card">
-              <span className="cert-icon">🌐</span>
+              <span className="cert-icon"><Globe size={24} /></span>
               <h4 className="cert-name">EF SET English</h4>
               <p className="cert-score">65/100 - C1 Effective Proficiency</p>
             </div>
@@ -356,22 +366,23 @@ function App() {
           </h2>
           <div className="contact-grid">
             <a href="mailto:e.junior95@gmail.com" className="contact-card">
-              <span className="contact-icon">📧</span>
+              <span className="contact-icon"><Mail size={24} /></span>
               <span className="contact-label">EMAIL</span>
               <span className="contact-value">e.junior95@gmail.com</span>
             </a>
             <a href="tel:+5515988309658" className="contact-card">
-              <span className="contact-icon">📱</span>
+              <span className="contact-icon"><Phone size={24} /></span>
               <span className="contact-label">PHONE</span>
               <span className="contact-value">+ 55 (15) 98830-9658</span>
             </a>
             <a href="https://www.linkedin.com/in/deved-jr100" target="_blank" rel="noopener noreferrer" className="contact-card">
-              <span className="contact-icon">💼</span>
+              <span className="contact-icon"><Linkedin size={24} /></span>
               <span className="contact-label">LINKEDIN</span>
               <span className="contact-value">linkedin.com/in/deved-jr100</span>
+              <ExternalLink size={16} style={{ marginLeft: '4px', opacity: 0.6 }} />
             </a>
             <div className="contact-card">
-              <span className="contact-icon">📍</span>
+              <span className="contact-icon"><MapPin size={24} /></span>
               <span className="contact-label">LOCATION</span>
               <span className="contact-value">Sorocaba, São Paulo, Brazil</span>
             </div>
@@ -381,8 +392,7 @@ function App() {
         {/* Footer */}
         <footer className="footer">
           <p className="footer-text">
-            <span className="code-comment-footer">{"// "}</span>
-            &lt;ejunior<span className="highlight-footer">95</span> /&gt; © {new Date().getFullYear()}
+            &lt;ejunior95 /&gt; © {new Date().getFullYear()}
           </p>
         </footer>
       </main>
