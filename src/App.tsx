@@ -233,8 +233,8 @@ function App() {
             <p className="hero-description">
               With a career dedicated to developing technological solutions, 
               I am part of the CAST team as a Senior Fullstack Developer, 
-              specializing in all typescript frameworks. My role is vital in the Technical Debt and QTeste project 
-              at Banco do Brasil, where we improve test management, 
+              specializing in all typescript frameworks. My role is vital in the Technical Debt and at a project known as QTeste 
+              of client company, where we improve test management, 
               significantly contributing to the institution's operational efficiency.
             </p>
           </div>
@@ -458,7 +458,7 @@ function App() {
                 </div>
               </div>
             </div>
-            
+
           </div>
         </section>
         {/* Education Section */}
