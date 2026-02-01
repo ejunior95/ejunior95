@@ -187,7 +187,7 @@ function App() {
             {experiences.map((exp, index) => (
               <div key={index} className="timeline-item">
                 <div className="timeline-marker">
-                  <span className="timeline-index">{String(index).padStart(2, '0')}</span>
+                  <span className="timeline-index">{(experiences.length - index) - 1}</span>
                 </div>
                 <div className="timeline-content">
                   <div className="timeline-header">
@@ -231,7 +231,7 @@ function App() {
           <div className="certifications-grid">
             <div className="cert-card">
               <span className="cert-icon">📜</span>
-              <h4 className="cert-name">Coding Fundamentals</h4>
+              <h4 className="cert-name">Google Coding Fundamentals</h4>
             </div>
             <div className="cert-card">
               <span className="cert-icon">🌐</span>
