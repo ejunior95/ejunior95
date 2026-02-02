@@ -113,12 +113,20 @@
   display: none;
 }
 
+.mobile-header {
+    display: none;
+}
+
 /* Responsive */
 
 /* Desktop (1200px - 1400px) */
 @media (min-width: 1200px) and (max-width: 1400px) {
   .desktop-header {
     padding: 1.5rem 2rem;
+  }
+
+  .mobile-header {
+    display: none;
   }
   
   .nav {
@@ -134,6 +142,10 @@
 @media (max-width: 1200px) {
   .desktop-header {
     padding: 1.2rem 1.5rem;
+  }
+
+  .mobile-header {
+    display: none;
   }
   
   .desktop-header .logo {
@@ -186,6 +198,10 @@
   .nav a {
     font-size: 0.65rem;
   }
+  .mobile-header {
+    display: none;
+  }
+
 }
 
 /* Mobile Large (480px - 768px) */
@@ -214,10 +230,24 @@
     cursor: pointer;
   }
   
+  /* Container for language toggle and hamburger */
+  .mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    order: 2;
+  }
+  
+  /* Mobile language toggle styling */
+  .mobile-lang-toggle {
+    font-size: 0.6rem;
+    padding: 0.4rem 0.6rem;
+    z-index: 100000;
+  }
+  
   /* Hamburger visible on mobile */
   .hamburger {
     display: flex;
-    order: 3;
     z-index: 100000;
   }
   
@@ -260,7 +290,9 @@
   }
 
   .header-actions {
-    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   
   .enroll-btn {
@@ -281,6 +313,17 @@
   
   .mobile-header .logo {
     font-size: 0.9rem;
+  }
+  
+  /* Mobile controls spacing */
+  .mobile-controls {
+    gap: 0.6rem;
+  }
+  
+  /* Smaller language toggle for small screens */
+  .mobile-lang-toggle {
+    font-size: 0.5rem;
+    padding: 0.3rem 0.5rem;
   }
   
   .hamburger {

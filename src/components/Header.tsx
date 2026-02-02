@@ -59,16 +59,23 @@ function Header({ onNavClick }: HeaderProps) {
           &lt;e<span className="highlight">95</span>/&gt;
         </div>
         
-        {/* Hamburger Button */}
-        <button 
-          className={`hamburger ${menuOpen ? 'active' : ''}`} 
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-        </button>
+        <div className="mobile-controls">
+          {/* Language Toggle Button */}
+          <button className="lang-toggle mobile-lang-toggle" onClick={toggleLanguage} title={language === 'pt' ? 'Português (Brasil)' : 'English'}>
+            {language === 'pt' ? 'PT-BR' : 'EN'}
+          </button>
+          
+          {/* Hamburger Button */}
+          <button 
+            className={`hamburger ${menuOpen ? 'active' : ''}`} 
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+          </button>
+        </div>
 
         <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
           <a href="#about" onClick={(e) => handleClick(e, 'about')}>{t.aboutMe}</a>
@@ -77,14 +84,9 @@ function Header({ onNavClick }: HeaderProps) {
           <a href="#projects" onClick={(e) => handleClick(e, 'projects')}>{t.projects}</a>
           <a href="#education" onClick={(e) => handleClick(e, 'education')}>{t.education}</a>
           <a href="#contact" onClick={(e) => handleClick(e, 'contact')}>{t.contact}</a>
-          <div className="header-actions">
-            <button className="lang-toggle" onClick={toggleLanguage} title={language === 'pt' ? 'Português (Brasil)' : 'English'}>
-              {language === 'pt' ? 'PT-BR' : 'EN'}
-            </button>
-            <a href="https://www.linkedin.com/in/deved-jr100" target="_blank" rel="noopener noreferrer" className="enroll-btn">
+          <a href="https://www.linkedin.com/in/deved-jr100" target="_blank" rel="noopener noreferrer" className="enroll-btn">
               {'()'} =&gt; {'{ '+ t.linkedin + ' }'}
-            </a>
-          </div>
+          </a>
         </nav>
       </header>
     </>
