@@ -9,6 +9,17 @@ import {
   Globe, 
   ExternalLink 
 } from 'lucide-react'
+import { 
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiAngular,
+  SiDocker,
+  SiKubernetes,
+  SiAmazon,
+  SiMongodb,
+  SiOracle
+} from 'react-icons/si'
 import DiscordiaImg  from './assets/discordia-preview.png'
 import EasyChatImg from './assets/easychat-preview.png'
 import './App.css'
@@ -237,6 +248,36 @@ function App() {
               of client company, where we improve test management, 
               significantly contributing to the institution's operational efficiency.
             </p>
+            
+            <div className="tech-stack">
+              <p className="tech-stack-title">## Main Technologies</p>
+              <div className="tech-icons">
+                <div className="tech-icon" title="JavaScript">
+                  <SiJavascript />
+                </div>
+                <div className="tech-icon" title="TypeScript">
+                  <SiTypescript />
+                </div>
+                <div className="tech-icon" title="React">
+                  <SiReact />
+                </div>
+                <div className="tech-icon" title="Angular">
+                  <SiAngular />
+                </div>
+                <div className="tech-icon" title="Docker">
+                  <SiDocker />
+                </div>
+                <div className="tech-icon" title="Kubernetes">
+                  <SiKubernetes />
+                </div>
+                <div className="tech-icon" title="MongoDB">
+                  <SiMongodb />
+                </div>
+                <div className="tech-icon" title="Oracle DB">
+                  <SiOracle />
+                </div>
+              </div>
+            </div>
           </div>
           
           <div className="hero-visual">
@@ -249,7 +290,7 @@ function App() {
               <br />
               <span className="code-prop">  location:</span> <span className="code-string">"Sorocaba, SP - Brazil"</span>,
               <br />
-              <span className="code-prop">  experience:</span> + <span className="code-number">10</span> years,
+              <span className="code-prop">  experience:</span><span className="code-number">+10 years,</span>
               <br />
               <span className="code-prop">  status:</span> <span className="code-string">"working"</span>
               <br />

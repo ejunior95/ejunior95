@@ -162,7 +162,58 @@
   line-height: 2.2;
   color: #888;
   max-width: 500px;
+  margin-bottom: 2rem;
 }
+
+/* Tech Stack Section */
+.tech-stack {
+  margin-top: 1.5rem;
+}
+
+.tech-stack-title {
+  font-size: 0.85rem;
+  color: #09ec42;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tech-icon:hover {
+  transform: translateY(-2px);
+  border-color: #09ec42;
+  box-shadow: 0 5px 15px rgba(9, 236, 66, 0.2);
+}
+
+/* Cores específicas para cada tecnologia */
+.tech-icon:nth-child(1) { color: #f7df1e; border-color: #f7df1e; } /* JavaScript */
+.tech-icon:nth-child(2) { color: #3178c6; border-color: #3178c6; } /* TypeScript */
+.tech-icon:nth-child(3) { color: #61dafb; border-color: #61dafb; } /* React */
+.tech-icon:nth-child(4) { color: #dd0031; border-color: #ff0037; } /* Angular */
+.tech-icon:nth-child(5) { color: #2496ed; border-color: #2496ed; } /* Docker */
+.tech-icon:nth-child(6) { color: #326ce5; border-color: #326ce5; } /* Kubernetes */
+.tech-icon:nth-child(7) { color: #47a248; border-color: #47a248; } /* MongoDB */
+.tech-icon:nth-child(8) { color: #f80000; border-color: #a10000; } /* Oracle */
 
 .hero-visual {
   display: flex;
@@ -1080,6 +1131,20 @@
     line-height: 2;
   }
   
+  .tech-icons {
+    gap: 0.5rem;
+  }
+  
+  .tech-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+  }
+  
+  .tech-stack-title {
+    font-size: 0.7rem;
+  }
+  
   .code-block {
     width: 100%;
     font-size: 0.7rem;
@@ -1383,6 +1448,22 @@
   .hero-description {
     font-size: 0.6rem;
     line-height: 1.8;
+  }
+  
+  .tech-icons {
+    gap: 0.3rem;
+    justify-content: center;
+  }
+  
+  .tech-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.6rem;
+  }
+  
+  .tech-stack-title {
+    font-size: 0.6rem;
+    text-align: center;
   }
   
   .code-block {
