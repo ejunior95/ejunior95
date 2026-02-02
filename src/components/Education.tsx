@@ -1,3 +1,5 @@
+import { useLanguage } from '../contexts/LanguageContext'
+import { translations } from '../i18n/translations'
 import './Education.css'
 
 interface EducationItem {
@@ -11,10 +13,13 @@ interface EducationProps {
 }
 
 function Education({ education }: EducationProps) {
+  const { language } = useLanguage()
+  const t = translations[language].education
+
   return (
     <section id="education" className="section">
       <h2 className="section-title">
-        <span className="code-bracket">{"<"}</span> education <span className="code-bracket">{"/>"}</span>
+        <span className="code-bracket">{"<"}</span> {t.title} <span className="code-bracket">{"</>"}</span>
       </h2>
       <div className="education-grid">
         {education.map((edu, index) => (

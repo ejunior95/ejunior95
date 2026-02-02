@@ -1,13 +1,18 @@
 import { ExternalLink } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
+import { translations } from '../i18n/translations'
 import DiscordiaImg  from '../assets/discordia-preview.png'
 import EasyChatImg from '../assets/easychat-preview.png'
 import './Projects.css'
 
 function Projects() {
+  const { language } = useLanguage()
+  const t = translations[language].projects
+
   return (
     <section id="projects" className="section">
       <h2 className="section-title">
-        <span className="code-bracket">{"@"}</span> projects
+        <span className="code-bracket">{"@"}</span> {t.title}
       </h2>
       <div className="projects-grid">
 
@@ -18,22 +23,21 @@ function Projects() {
               <h3 className="project-title">EasyChat</h3>
               <div className="project-links">
                 <a href="https://easychat.ia.br/" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <span>website</span>
+                  <span>{t.website}</span>
                   <ExternalLink size={14} />
                 </a>
                 <a href="https://github.com/ejunior95/easychat-landing-page" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <span>github</span>
+                  <span>{t.github}</span>
                   <ExternalLink size={14} />
                 </a>
                 <a href="https://www.npmjs.com/package/@ejunior95/easy-chat" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <span>npm</span>
+                  <span>{t.npm}</span>
                   <ExternalLink size={14} />
                 </a>
               </div>
             </div>
             <p className="project-description">
-              The secure, plug-and-play AI Chat Widget for React. Add a ChatGPT-powered assistant to your 
-              application in seconds, without exposing your API Keys.
+              {t.easyChatDescription}
             </p>
             <div className="project-tech">
               <span className="tech-tag">React</span>
@@ -60,18 +64,17 @@ function Projects() {
               <h3 className="project-title">DiscordIA</h3>
               <div className="project-links">
                 <a href="https://discordia.app.br/" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <span>website</span>
+                  <span>{t.website}</span>
                   <ExternalLink size={14} />
                 </a>
                 <a href="https://github.com/ejunior95/discordia" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <span>github</span>
+                  <span>{t.github}</span>
                   <ExternalLink size={14} />
                 </a>
               </div>
             </div>
             <p className="project-description">
-              A contentious chat between the leading AIs on the market, competing for the best answer to your questions! 
-              A digital arena where multiple AIs compete in real time.
+              {t.discordiaDescription}
             </p>
             <div className="project-tech">
               <span className="tech-tag">NestJS</span>
@@ -100,18 +103,17 @@ function Projects() {
               <h3 className="project-title">FormAI</h3>
               <div className="project-links">
                 <a href="https://github.com/ejunior95/formai" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <span>github</span>
+                  <span>{t.github}</span>
                   <ExternalLink size={14} />
                 </a>
                 <a href="https://www.npmjs.com/package/@ejunior95/formai-core" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <span>npm</span>
+                  <span>{t.npm}</span>
                   <ExternalLink size={14} />
                 </a>
               </div>
             </div>
             <p className="project-description">
-              Generate form fields and validations (React, Vue, Angular) from natural language prompts. 
-              Stop wasting time hunting for validation regex or manually building complex validation logic.
+              {t.formaiDescription}
             </p>
             <div className="project-tech">
               <span className="tech-tag">React</span>
@@ -128,7 +130,7 @@ function Projects() {
                   {/* Espaço reservado para screenshot do FormAI */}
                   <div className="screenshot-placeholder">
                     <span>// FormAI Screenshot</span>
-                    <span>coming soon...</span>
+                    <span>{t.comingSoon}</span>
                   </div>
                 </div>
               </div>

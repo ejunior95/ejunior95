@@ -20,11 +20,11 @@
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav a {
-  font-size: .9rem;
+  font-size: .8rem;
   color: #a2a2a2;
   text-decoration: none;
   transition: color 0.3s;
@@ -53,6 +53,23 @@
 }
 
 .enroll-btn:hover {
+  background: #09ec42;
+  color: #0a0a0a;
+}
+
+.lang-toggle {
+  font-family: 'Press Start 2P', monospace;
+  font-size: .7rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #09ec42;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.lang-toggle:hover {
   background: #09ec42;
   color: #0a0a0a;
 }
@@ -105,11 +122,11 @@
   }
   
   .nav {
-    gap: 1.5rem;
+    gap: 1rem;
   }
   
   .nav a {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -125,11 +142,11 @@
   }
   
   .nav {
-    gap: 1.2rem;
+    gap: 1rem;
   }
   
   .nav a {
-    font-size: 0.7rem;
+    font-size: 0.62rem;
   }
   
   .enroll-btn {

@@ -8,25 +8,26 @@ import {
   SiMongodb,
   SiOracle
 } from 'react-icons/si'
+import { useLanguage } from '../contexts/LanguageContext'
+import { translations } from '../i18n/translations'
 import './Hero.css'
 
 function Hero() {
+  const { language } = useLanguage()
+  const t = translations[language].hero
+
   return (
     <section id="about" className="hero">
       <div className="hero-content">
-        <p className="hero-subtitle">// Hello, welcome!</p>
+        <p className="hero-subtitle">{t.subtitle}</p>
         <h1 className="hero-title">Edvaldo Ramos <span className="highlight">Junior</span></h1>
-        <p className="hero-role">SENIOR FULLSTACK DEVELOPER</p>
+        <p className="hero-role">{t.role}</p>
         <p className="hero-description">
-          With a career dedicated to developing technological solutions, 
-          I am part of the CAST team as a Senior Fullstack Developer, 
-          specializing in all typescript frameworks. My role is vital in the Technical Debt and at a project known as QTeste 
-          of client company, where we improve test management, 
-          significantly contributing to the institution's operational efficiency.
+          {t.description}
         </p>
         
         <div className="tech-stack">
-          <p className="tech-stack-title">## Main Technologies</p>
+          <p className="tech-stack-title">{t.techStackTitle}</p>
           <div className="tech-icons">
             <div className="tech-icon" title="JavaScript">
               <SiJavascript />
@@ -58,17 +59,17 @@ function Hero() {
       
       <div className="hero-visual">
         <div className="code-block">
-          <span className="code-comment">{"// developer.config.ts"}</span>
+          <span className="code-comment">{t.codeComment}</span>
           <br />
           <span className="code-keyword">const</span> <span className="code-var">greatDeveloper</span> = {"{"}
           <br />
-          <span className="code-prop">  name:</span> <span className="code-string">"Edvaldo Junior"</span>,
+          <span className="code-prop">  name:</span> <span className="code-string">"{t.codeName}"</span>,
           <br />
-          <span className="code-prop">  location:</span> <span className="code-string">"Sorocaba, SP - Brazil"</span>,
+          <span className="code-prop">  location:</span> <span className="code-string">"{t.codeLocation}"</span>,
           <br />
-          <span className="code-prop">  experience:</span><span className="code-number">+10 years,</span>
+          <span className="code-prop">  experience:</span><span className="code-number">{t.codeExperience},</span>
           <br />
-          <span className="code-prop">  status:</span> <span className="code-string">"working"</span>
+          <span className="code-prop">  status:</span> <span className="code-string">"{t.codeStatus}"</span>
           <br />
           {"}"};
         </div>

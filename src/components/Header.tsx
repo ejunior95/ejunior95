@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { useLanguage } from '../contexts/LanguageContext'
+import { translations } from '../i18n/translations'
 import './Header.css'
 
 interface HeaderProps {
@@ -7,6 +9,7 @@ interface HeaderProps {
 
 function Header({ onNavClick }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false)
+  const { language, toggleLanguage } = useLanguage()
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
@@ -21,6 +24,8 @@ function Header({ onNavClick }: HeaderProps) {
     onNavClick(e, targetId)
   }
 
+  const t = translations[language].header
+
   return (
     <>
       {/* Header - Desktop View */}
@@ -30,17 +35,20 @@ function Header({ onNavClick }: HeaderProps) {
         </div>
 
         <nav className="nav">
-          <a href="#about" onClick={(e) => handleClick(e, 'about')}>ABOUT ME</a>
-          <a href="#skills" onClick={(e) => handleClick(e, 'skills')}>SKILLS</a>
-          <a href="#experience" onClick={(e) => handleClick(e, 'experience')}>EXPERIENCE</a>
-          <a href="#projects" onClick={(e) => handleClick(e, 'projects')}>PROJECTS</a>
-          <a href="#education" onClick={(e) => handleClick(e, 'education')}>EDUCATION</a>
-          <a href="#contact" onClick={(e) => handleClick(e, 'contact')}>CONTACT</a>
+          <a href="#about" onClick={(e) => handleClick(e, 'about')}>{t.aboutMe}</a>
+          <a href="#skills" onClick={(e) => handleClick(e, 'skills')}>{t.skills}</a>
+          <a href="#experience" onClick={(e) => handleClick(e, 'experience')}>{t.experience}</a>
+          <a href="#projects" onClick={(e) => handleClick(e, 'projects')}>{t.projects}</a>
+          <a href="#education" onClick={(e) => handleClick(e, 'education')}>{t.education}</a>
+          <a href="#contact" onClick={(e) => handleClick(e, 'contact')}>{t.contact}</a>
         </nav>
 
         <div className="header-actions">
+          <button className="lang-toggle" onClick={toggleLanguage} title={language === 'pt' ? 'Português (Brasil)' : 'English'}>
+            {language === 'pt' ? 'PT-BR' : 'EN'}
+          </button>
           <a href="https://www.linkedin.com/in/deved-jr100" target="_blank" rel="noopener noreferrer" className="enroll-btn">
-            {'()'} =&gt; {'{ '+ 'LINKEDIN' + ' }'}
+            {'()'} =&gt; {'{ '+ t.linkedin + ' }'}
           </a>
         </div>
       </header>
@@ -63,15 +71,18 @@ function Header({ onNavClick }: HeaderProps) {
         </button>
 
         <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
-          <a href="#about" onClick={(e) => handleClick(e, 'about')}>ABOUT ME</a>
-          <a href="#skills" onClick={(e) => handleClick(e, 'skills')}>SKILLS</a>
-          <a href="#experience" onClick={(e) => handleClick(e, 'experience')}>EXPERIENCE</a>
-          <a href="#projects" onClick={(e) => handleClick(e, 'projects')}>PROJECTS</a>
-          <a href="#education" onClick={(e) => handleClick(e, 'education')}>EDUCATION</a>
-          <a href="#contact" onClick={(e) => handleClick(e, 'contact')}>CONTACT</a>
+          <a href="#about" onClick={(e) => handleClick(e, 'about')}>{t.aboutMe}</a>
+          <a href="#skills" onClick={(e) => handleClick(e, 'skills')}>{t.skills}</a>
+          <a href="#experience" onClick={(e) => handleClick(e, 'experience')}>{t.experience}</a>
+          <a href="#projects" onClick={(e) => handleClick(e, 'projects')}>{t.projects}</a>
+          <a href="#education" onClick={(e) => handleClick(e, 'education')}>{t.education}</a>
+          <a href="#contact" onClick={(e) => handleClick(e, 'contact')}>{t.contact}</a>
           <div className="header-actions">
+            <button className="lang-toggle" onClick={toggleLanguage} title={language === 'pt' ? 'Português (Brasil)' : 'English'}>
+              {language === 'pt' ? 'PT-BR' : 'EN'}
+            </button>
             <a href="https://www.linkedin.com/in/deved-jr100" target="_blank" rel="noopener noreferrer" className="enroll-btn">
-              {'()'} =&gt; {'{ '+ 'LINKEDIN' + ' }'}
+              {'()'} =&gt; {'{ '+ t.linkedin + ' }'}
             </a>
           </div>
         </nav>
