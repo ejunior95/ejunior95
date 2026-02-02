@@ -19,7 +19,7 @@ function Education({ education }: EducationProps) {
   return (
     <section id="education" className="section">
       <h2 className="section-title">
-        <span className="code-bracket">{"<"}</span> {t.title} <span className="code-bracket">{"</>"}</span>
+        <span className="code-bracket">{"<"}</span> {t.title} <span className="code-bracket">{" />"}</span>
       </h2>
       <div className="education-grid">
         {education.map((edu, index) => (

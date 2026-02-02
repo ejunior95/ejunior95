@@ -45,7 +45,7 @@ function Header({ onNavClick }: HeaderProps) {
 
         <div className="header-actions">
           <button className="lang-toggle" onClick={toggleLanguage} title={language === 'pt' ? 'Português (Brasil)' : 'English'}>
-            {language === 'pt' ? 'PT-BR' : 'EN'}
+            {language === 'pt' ? 'EN' : 'PT-BR'}
           </button>
           <a href="https://www.linkedin.com/in/deved-jr100" target="_blank" rel="noopener noreferrer" className="enroll-btn">
             {'()'} =&gt; {'{ '+ t.linkedin + ' }'}
@@ -62,7 +62,7 @@ function Header({ onNavClick }: HeaderProps) {
         <div className="mobile-controls">
           {/* Language Toggle Button */}
           <button className="lang-toggle mobile-lang-toggle" onClick={toggleLanguage} title={language === 'pt' ? 'Português (Brasil)' : 'English'}>
-            {language === 'pt' ? 'PT-BR' : 'EN'}
+            {language === 'pt' ? 'EN' : 'PT-BR'}
           </button>
           
           {/* Hamburger Button */}
