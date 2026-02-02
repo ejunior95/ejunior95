@@ -1,0 +1,138 @@
+/* Section Styles */
+.section {
+  margin-bottom: 5rem;
+  scroll-margin-top: 100px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  text-transform: lowercase;
+}
+
+.code-bracket {
+  color: #09ec42;
+}
+
+/* Education Section */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.education-card {
+  background: #111;
+  border: 1px solid #1a1a1a;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.education-card:hover {
+  border-color: #09ec42;
+}
+
+.edu-index {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #424242;
+  font-weight: bold;
+}
+
+.edu-institution {
+  font-size: 0.8rem;
+  color: #09ec42;
+  margin-bottom: 1rem;
+}
+
+.edu-degree {
+  font-size: 0.65rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.edu-period {
+  font-size: 0.6rem;
+  color: #a2a2a2;
+}
+
+/* Responsive */
+
+/* Tablet Landscape (1024px - 1200px) */
+@media (max-width: 1200px) {
+  .section-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet Portrait (768px - 1024px) */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 1.1rem;
+  }
+  
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Large (480px - 768px) */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .education-card {
+    padding: 1.5rem;
+  }
+  
+  .edu-institution {
+    font-size: 0.65rem;
+  }
+  
+  .edu-degree {
+    font-size: 0.5rem;
+  }
+  
+  .edu-period {
+    font-size: 0.45rem;
+  }
+}
+
+/* Mobile Small (até 480px) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .education-card {
+    padding: 1rem;
+  }
+  
+  .edu-index {
+    font-size: 1rem;
+  }
+  
+  .edu-institution {
+    font-size: 0.65rem;
+  }
+  
+  .edu-degree {
+    font-size: 0.55rem;
+  }
+  
+  .edu-period {
+    font-size: 0.5rem;
+  }
+}

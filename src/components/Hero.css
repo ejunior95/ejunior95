@@ -1,0 +1,284 @@
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  min-height: 60vh;
+  align-items: center;
+  scroll-margin-top: 100px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-subtitle {
+  font-size: 0.85rem;
+  color: #09ec42;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.hero-role {
+  font-size: 0.9rem;
+  color: #09ec42;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.hero-description {
+  font-size: 0.85rem;
+  line-height: 2.2;
+  color: #888;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+/* Tech Stack Section */
+.tech-stack {
+  margin-top: 1.5rem;
+}
+
+.tech-stack-title {
+  font-size: 0.85rem;
+  color: #09ec42;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tech-icon:hover {
+  transform: translateY(-2px);
+  border-color: #09ec42;
+  box-shadow: 0 5px 15px rgba(9, 236, 66, 0.2);
+}
+
+/* Cores específicas para cada tecnologia */
+.tech-icon:nth-child(1) { color: #f7df1e; border-color: #f7df1e; } /* JavaScript */
+.tech-icon:nth-child(2) { color: #3178c6; border-color: #3178c6; } /* TypeScript */
+.tech-icon:nth-child(3) { color: #61dafb; border-color: #61dafb; } /* React */
+.tech-icon:nth-child(4) { color: #dd0031; border-color: #ff0037; } /* Angular */
+.tech-icon:nth-child(5) { color: #2496ed; border-color: #2496ed; } /* Docker */
+.tech-icon:nth-child(6) { color: #326ce5; border-color: #326ce5; } /* Kubernetes */
+.tech-icon:nth-child(7) { color: #47a248; border-color: #47a248; } /* MongoDB */
+.tech-icon:nth-child(8) { color: #f80000; border-color: #a10000; } /* Oracle */
+
+.hero-visual {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Code Block Style */
+.code-block {
+  background: #111;
+  border: 1px solid #1a1a1a;
+  padding: 2rem;
+  font-size: 0.8rem;
+  line-height: 2.5;
+  border-radius: 4px;
+}
+
+.code-comment {
+  color: #a2a2a2;
+}
+
+.code-keyword {
+  color: #ff79c6;
+}
+
+.code-var {
+  color: #09ec42;
+}
+
+.code-prop {
+  color: #8be9fd;
+}
+
+.code-string {
+  color: #f1fa8c;
+}
+
+.code-number {
+  color: #bd93f9;
+}
+
+/* Responsive */
+
+/* Large Desktop (1400px+) */
+@media (min-width: 1400px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Tablet Landscape (1024px - 1200px) */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle,
+  .hero-description {
+    font-size: 0.75rem;
+  }
+  
+  .hero-role {
+    font-size: 0.8rem;
+  }
+  
+  .code-block {
+    font-size: 0.7rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Tablet Portrait (768px - 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .hero-visual {
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .hero-description {
+    max-width: 100%;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile Large (480px - 768px) */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 1.5rem;
+  }
+  
+  .hero-title {
+    font-size: 1.4rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.65rem;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+  
+  .hero-role {
+    font-size: 0.7rem;
+  }
+  
+  .hero-description {
+    font-size: 0.6rem;
+    line-height: 2;
+  }
+  
+  .tech-icons {
+    gap: 0.5rem;
+  }
+  
+  .tech-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+  }
+  
+  .tech-stack-title {
+    font-size: 0.7rem;
+  }
+  
+  .code-block {
+    width: 100%;
+    font-size: 0.7rem;
+    padding: 1rem;
+    line-height: 2.2;
+  }
+}
+
+/* Mobile Small (até 480px) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.55rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-role {
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 0.6rem;
+    line-height: 1.8;
+  }
+  
+  .tech-icons {
+    gap: 0.3rem;
+    justify-content: center;
+  }
+  
+  .tech-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.6rem;
+  }
+  
+  .tech-stack-title {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  
+  .code-block {
+    font-size: 0.55rem;
+    padding: 0.8rem;
+    line-height: 2;
+  }
+}

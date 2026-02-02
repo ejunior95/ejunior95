@@ -1,0 +1,220 @@
+/* Section Styles */
+.section {
+  margin-bottom: 5rem;
+  scroll-margin-top: 100px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  text-transform: lowercase;
+}
+
+.code-bracket {
+  color: #09ec42;
+}
+
+/* Timeline / Experience Section */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #09ec42, #1a1a1a);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -3.1rem;
+  top: .9rem;
+  width: 3rem;
+  height: 3rem;
+  background: #0a0a0a;
+  border: 2px solid #09ec42;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-index {
+  color: #09ec42;
+}
+
+.timeline-content {
+  background: #111;
+  border: 1px solid #1a1a1a;
+  padding: 1.5rem;
+  flex: 1;
+  transition: all 0.3s;
+}
+
+.timeline-content:hover {
+  border-color: #333;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.company-name {
+  font-size: 1rem;
+  color: #09ec42;
+}
+
+.timeline-period {
+  font-size: 0.7rem;
+  color: #a2a2a2;
+}
+
+.role-title {
+  font-size: 0.8rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.timeline-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  font-size: .7rem;
+  color: #a2a2a2;
+}
+
+.timeline-description {
+  font-size: 0.65rem;
+  color: #fff;
+  line-height: 2;
+}
+
+/* Responsive */
+
+/* Tablet Landscape (1024px - 1200px) */
+@media (max-width: 1200px) {
+  .section-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet Portrait (768px - 1024px) */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Large (480px - 768px) */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-marker {
+    left: -2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .timeline-content {
+    padding: 1rem;
+  }
+  
+  .timeline-header {
+    flex-direction: column;
+  }
+  
+  .company-name {
+    font-size: 0.8rem;
+  }
+  
+  .timeline-period {
+    font-size: 0.6rem;
+  }
+  
+  .role-title {
+    font-size: 0.6rem;
+  }
+  
+  .meta-item {
+    font-size: .6rem;
+  }
+  
+  .timeline-description {
+    font-size: 0.5rem;
+  }
+}
+
+/* Mobile Small (até 480px) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .timeline {
+    padding-left: 1rem;
+  }
+  
+  .timeline-marker {
+    left: -1.5rem;
+    top: .6rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .timeline-index {
+    font-size: 0.6rem;
+  }
+  
+  .timeline-content {
+    padding: 0.8rem;
+  }
+  
+  .company-name {
+    font-size: .9rem;
+  }
+  
+  .role-title {
+    font-size: 0.6rem;
+  }
+  
+  .meta-item {
+    font-size: .7rem;
+  }
+  
+  .timeline-description {
+    font-size: 0.6rem;
+    line-height: 1.8;
+  }
+}
