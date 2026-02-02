@@ -70,14 +70,15 @@ function Projects() {
               </div>
             </div>
             <p className="project-description">
-              Um chat conflituoso entre as principais IAs do mercado, disputando pela melhor resposta para suas perguntas! 
-              Uma arena digital onde múltiplas IAs competem em tempo real.
+              A contentious chat between the leading AIs on the market, competing for the best answer to your questions! 
+              A digital arena where multiple AIs compete in real time.
             </p>
             <div className="project-tech">
               <span className="tech-tag">NestJS</span>
               <span className="tech-tag">OpenAI</span>
               <span className="tech-tag">Gemini</span>
               <span className="tech-tag">DeepSeek</span>
+              <span className="tech-tag">Grok</span>
               <span className="tech-tag">AI</span>
             </div>
           </div>
