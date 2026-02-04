@@ -20,7 +20,7 @@
 
 .nav {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .nav a {
@@ -122,7 +122,7 @@
 /* Desktop (1200px - 1400px) */
 @media (min-width: 1200px) and (max-width: 1400px) {
   .desktop-header {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
   }
 
   .mobile-header {
@@ -134,14 +134,14 @@
   }
   
   .nav a {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 }
 
 /* Tablet Landscape (1024px - 1200px) */
 @media (max-width: 1200px) {
   .desktop-header {
-    padding: 1.2rem 1.5rem;
+    padding: 1.2rem 1rem;
   }
 
   .mobile-header {

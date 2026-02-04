@@ -8,6 +8,7 @@ import Education from './components/Education'
 import Certifications from './components/Certifications'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import VideoBackground from './components/VideoBackground'
 import { useLanguage } from './contexts/LanguageContext'
 import { translations } from './i18n/translations'
 import './App.css'
@@ -163,6 +164,7 @@ function AppContent() {
 
   return (
     <div className="app">
+      <VideoBackground />
       <Header onNavClick={handleNavClick} />
     
       {/* Hero Section */}
