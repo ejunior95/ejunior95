@@ -20,7 +20,6 @@ function AppContent() {
   const handleNavClick = (e: React.MouseEvent<HTMLElement>, targetId: string) => {
     e.preventDefault()
     
-    // Pequeno delay para garantir que o menu feche antes do scroll
     setTimeout(() => {
       const element = document.getElementById(targetId)
       if (element) {
@@ -167,7 +166,6 @@ function AppContent() {
       <VideoBackground />
       <Header onNavClick={handleNavClick} />
     
-      {/* Hero Section */}
       <main className="main">
         <Hero />
         <StatsInfo />
