@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  background: #111;
+  background: #000;
   border: 1px solid #1a1a1a;
   margin-bottom: 4rem;
 }
@@ -37,7 +37,7 @@
   font-family: 'Press Start 2P', monospace;
   font-size: 1rem;
   background: #09ec42;
-  color: #0a0a0a;
+  color: #000;
   border: none;
   padding: 1.5rem;
   cursor: pointer;

@@ -68,7 +68,7 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  background: #000;
   border: 1px solid #333;
   border-radius: 8px;
   color: #fff;
@@ -101,7 +101,7 @@
 
 /* Code Block Style */
 .code-block {
-  background: #111;
+  background: #000;
   border: 1px solid #1a1a1a;
   padding: 2rem;
   font-size: 0.8rem;
