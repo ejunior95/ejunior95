@@ -45,7 +45,7 @@ export const translations = {
       castRole: 'Senior Fullstack Developer (Angular and NodeJS)',
       castPeriod: 'May 2022 - Present',
       castLocation: 'Home office',
-      castDescription: 'I worked on two strategic fronts of software engineering. As a developer on the QTeste project, I worked on an internal platform for test automation and evidence generation. Simultaneously, in the Technical Debt team, I worked on mapping and analyzing technical debt across multiple projects, helping to direct quality improvements and code sustainability to optimize Banco do Brasil\'s systems.',
+      castDescription: 'I worked on two strategic fronts of software engineering. As a developer on the QTeste project, I worked on an internal platform for test automation and evidence generation. Simultaneously, in the Technical Debt team, I worked on mapping and analyzing technical debt across multiple projects, helping to direct quality improvements and code sustainability to optimize client company\'s systems.',
       
       revaloRole: 'AI Trainer',
       revaloPeriod: 'May 2025 - June 2025',
@@ -162,7 +162,7 @@ export const translations = {
       castRole: 'Desenvolvedor Fullstack Sênior (Angular e NodeJS)',
       castPeriod: 'Mai 2022 - Presente',
       castLocation: 'Home office',
-      castDescription: 'Atuei em duas frentes estratégicas de engenharia de software. Como desenvolvedor no projeto QTeste, trabalhei em uma plataforma interna para automação de testes e geração de evidências. Simultaneamente, na equipe de Dívida Técnica, atuei no mapeamento e análise de débitos técnicos em múltiplos projetos, ajudando a direcionar melhorias de qualidade e sustentabilidade do código para otimizar os sistemas do Banco do Brasil.',
+      castDescription: 'Atuei em duas frentes estratégicas de engenharia de software. Como desenvolvedor no projeto QTeste, trabalhei em uma plataforma interna para automação de testes e geração de evidências. Simultaneamente, na equipe de Dívida Técnica, atuei no mapeamento e análise de débitos técnicos em múltiplos projetos, ajudando a direcionar melhorias de qualidade e sustentabilidade do código para otimizar os sistemas da empresa cliente.',
       
       revaloRole: 'Treinador de IA',
       revaloPeriod: 'Mai 2025 - Jun 2025',

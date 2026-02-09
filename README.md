@@ -36,7 +36,7 @@ const greatDeveloper = {
 };
 ```
 
-🚀 Atualmente trabalho no projeto **Divida Técnica, na Plataforma de Qualidade no cliente Banco do Brasil**, desenvolvendo plataformas para automação de testes e melhorias de qualidade de código.
+🚀 Atualmente trabalho no projeto **Divida Técnica, na Plataforma de Qualidade na empresa cliente**, desenvolvendo plataformas para automação de testes e melhorias de qualidade de código.
 
 ---
 
