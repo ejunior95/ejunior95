@@ -47,12 +47,6 @@ function Hero() {
             <div className="tech-icon" title="Kubernetes">
               <SiKubernetes />
             </div>
-            <div className="tech-icon" title="MongoDB">
-              <SiMongodb />
-            </div>
-            <div className="tech-icon" title="Oracle DB">
-              <SiOracle />
-            </div>
           </div>
         </div>
       </div>

@@ -90,8 +90,6 @@
 .tech-icon:nth-child(4) { color: #dd0031; border-color: #ff0037; } /* Angular */
 .tech-icon:nth-child(5) { color: #2496ed; border-color: #2496ed; } /* Docker */
 .tech-icon:nth-child(6) { color: #326ce5; border-color: #326ce5; } /* Kubernetes */
-.tech-icon:nth-child(7) { color: #47a248; border-color: #47a248; } /* MongoDB */
-.tech-icon:nth-child(8) { color: #f80000; border-color: #a10000; } /* Oracle */
 
 .hero-visual {
   display: flex;
