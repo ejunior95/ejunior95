@@ -93,8 +93,10 @@
 
 .hero-visual {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  margin-bottom: 5dvh;
 }
 
 /* Code Block Style */

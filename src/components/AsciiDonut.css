@@ -1,0 +1,18 @@
+.donut-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ascii-donut {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 14px; 
+  line-height: 14px; 
+  color: #00ff41; 
+  text-shadow: 0 0 5px #00ff41, 0 0 10px #00ff41; 
+  white-space: pre; 
+  margin: 0;
+}

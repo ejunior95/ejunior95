@@ -5,18 +5,18 @@ import {
   SiAngular,
   SiDocker,
   SiKubernetes,
-  SiMongodb,
-  SiOracle
 } from 'react-icons/si'
 import { useLanguage } from '../contexts/LanguageContext'
 import { translations } from '../i18n/translations'
 import './Hero.css'
+import AsciiDonut from './AsciiDonut'
 
 function Hero() {
   const { language } = useLanguage()
   const t = translations[language].hero
 
   return (
+    <>
     <section id="about" className="hero">
       <div className="hero-content">
         <p className="hero-subtitle">{t.subtitle}</p>
@@ -50,7 +50,9 @@ function Hero() {
           </div>
         </div>
       </div>
-      
+    <AsciiDonut />
+    </section>
+    
       <div className="hero-visual">
         <div className="code-block">
           <span className="code-comment">{t.codeComment}</span>
@@ -68,7 +70,7 @@ function Hero() {
           {"}"};
         </div>
       </div>
-    </section>
+    </>
   )
 }
 
