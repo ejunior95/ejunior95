@@ -5,22 +5,18 @@ const AsciiDonut: React.FC = () => {
   const [frame, setFrame] = useState<string>('');
 
   useEffect(() => {
-    // =============================
-    // CONFIGURAÇÕES CONTROLÁVEIS
-    // =============================
-
     const canvasWidth = 60;
     const canvasHeight = 30;
 
-    const horizontalScale = 35; // 🔎 zoom horizontal (tamanho visual)
-    const verticalScale = 20;   // 🔎 zoom vertical (tamanho visual)
+    const horizontalScale = 35; // zoom horizontal (tamanho visual)
+    const verticalScale = 20;   // zoom vertical (tamanho visual)
 
-    const donutRadius = 2;      // 🍩 tamanho estrutural do donut
+    const donutRadius = 1.8;      // tamanho estrutural do donut
 
-    const rotationSpeedX = 0.025; // 🔄 velocidade rotação eixo X
-    const rotationSpeedZ = 0.015; // 🔄 velocidade rotação eixo Z
+    const rotationSpeedX = 0.025; // velocidade rotação eixo X
+    const rotationSpeedZ = 0.015; // velocidade rotação eixo Z
 
-    const frameDelay = 30; // 🎞 velocidade da animação (FPS)
+    const frameDelay = 30; // velocidade da animação (FPS)
 
     // =============================
 
