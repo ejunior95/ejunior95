@@ -1,5 +1,6 @@
 import { useLanguage } from '../contexts/LanguageContext'
 import { translations } from '../i18n/translations'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 import './Education.css'
 
 interface EducationItem {
@@ -15,9 +16,10 @@ interface EducationProps {
 function Education({ education }: EducationProps) {
   const { language } = useLanguage()
   const t = translations[language].education
+  const { ref, isVisible } = useScrollReveal<HTMLElement>()
 
   return (
-    <section id="education" className="section">
+    <section id="education" className={`section ${isVisible ? 'scroll-visible' : 'scroll-hidden'}`} ref={ref}>
       <h2 className="section-title">
         <span className="code-bracket">{"<"}</span> {t.title} <span className="code-bracket">{" />"}</span>
       </h2>

@@ -107,13 +107,57 @@ export const translations = {
       efset: 'EF SET English',
       efsetScore: '65/100 - C1 Effective Proficiency'
     },
+    achievements: {
+      title: 'achievements',
+      locked: 'Achievement locked',
+      items: [
+        { title: 'First Commit', description: '+10 years in tech' },
+        { title: 'Open Source Hero', description: '3+ public projects' },
+        { title: 'Polyglot', description: 'Bilingual EN/PT' },
+        { title: 'Container Master', description: 'Docker + Kubernetes' },
+        { title: 'AI Explorer', description: 'AI/LLM projects' },
+        { title: 'Scholar', description: 'CS degree' },
+        { title: 'Published Author', description: 'NPM packages' },
+        { title: 'Security First', description: 'Security-focused projects' },
+      ]
+    },
     contact: {
       title: 'contact',
       email: 'EMAIL',
       phone: 'PHONE',
       linkedin: 'LINKEDIN',
       location: 'LOCATION',
-      locationValue: 'Sorocaba, São Paulo, Brazil'
+      locationValue: 'Sorocaba, São Paulo, Brazil',
+      whatsappMessage: 'Hi Edvaldo! I found your portfolio and would like to get in touch.'
+    },
+    githubProjects: {
+      title: 'other projects',
+      loading: 'fetching repos...',
+      error: 'failed to fetch repos'
+    },
+    terminal: {
+      welcome: 'Welcome to ejunior95 terminal!\nType "help" to see available commands.',
+      helpText: 'Available commands:\n\n  about       - Who am I\n  skills      - My tech skills\n  experience  - Work history\n  projects    - My projects\n  education   - Academic background\n  contact     - How to reach me\n  language    - Toggle EN/PT\n  clear       - Clear terminal\n  help        - Show this menu',
+      aboutText: 'Edvaldo Ramos Junior\nSenior Fullstack Developer @ CAST\n+10 years of experience\nBased in Sorocaba, SP - Brazil\n\nSpecialized in TypeScript frameworks across the full stack.\nPassionate about AI, open source, and clean code.',
+      skillsText: 'Frontend:  React, Angular, Next.js, TypeScript\nBackend:   Node.js, NestJS, Express.js, REST APIs\nDatabase:  PostgreSQL, MongoDB, MySQL, OracleDB\nDevOps:    Docker, Kubernetes, AWS, OpenShift\nAI/ML:     LLM, MCP, Prompt Engineering\nOther:     Microservices, API Gateway, Message Queue',
+      experienceText: '[0] CAST - Senior Fullstack Developer (2022 - Present)\n[1] Revelo - AI Trainer (2025)\n[2] Infosys - Senior Backend Developer (2021 - 2022)\n[3] Farma Ponte - Senior Fullstack Developer (2020 - 2021)\n[4] Grupo Soluções - Junior Frontend Developer (2020)\n[5] Greenone - Junior Frontend Developer (2019 - 2020)\n[6] Capgemini - Junior Infra Technician (2013 - 2015)',
+      projectsText: '@ EasyChat - Secure AI Chat Widget for React\n@ DiscordIA - AI arena where multiple AIs compete\n@ FormAI - Generate forms from natural language',
+      contactText: 'Email:    e.junior95@gmail.com\nPhone:    +55 (15) 98830-9658\nLinkedIn: linkedin.com/in/deved-jr100\nLocation: Sorocaba, São Paulo, Brazil',
+      educationText: 'UNIP - Bachelor in Computer Systems Analysis (2026-2028)\nETEC - Technical Education in IT/Software (2010-2011)',
+      languageChanged: 'Language changed successfully!',
+      sudoText: 'permission denied. nice try though \ud83d\ude0f',
+      themeText: 'nice try, but green is the way \ud83d\ude0e',
+      notFound: 'command not found:',
+      typeHelp: 'Type "help" for available commands.'
+    },
+    blog: {
+      title: 'blog',
+      backToPortfolio: '< portfolio',
+      backToBlog: '< back to blog',
+      noPosts: 'no posts yet...',
+      comments: 'comments',
+      notFound: 'post not found',
+      footer: 'ejunior95 blog'
     }
   },
   pt: {
@@ -224,13 +268,57 @@ export const translations = {
       efset: 'EF SET Inglês',
       efsetScore: '65/100 - C1 Proficiência Efetiva'
     },
+    achievements: {
+      title: 'conquistas',
+      locked: 'Conquista bloqueada',
+      items: [
+        { title: 'First Commit', description: '+10 anos em tech' },
+        { title: 'Open Source Hero', description: '3+ projetos públicos' },
+        { title: 'Polyglot', description: 'Bilíngue EN/PT' },
+        { title: 'Container Master', description: 'Docker + Kubernetes' },
+        { title: 'AI Explorer', description: 'Projetos de IA/LLM' },
+        { title: 'Scholar', description: 'Graduação em Computação' },
+        { title: 'Published Author', description: 'Pacotes NPM' },
+        { title: 'Security First', description: 'Projetos focados em segurança' },
+      ]
+    },
     contact: {
       title: 'contato',
       email: 'EMAIL',
       phone: 'TELEFONE',
       linkedin: 'LINKEDIN',
       location: 'LOCALIZAÇÃO',
-      locationValue: 'Sorocaba, São Paulo, Brasil'
+      locationValue: 'Sorocaba, São Paulo, Brasil',
+      whatsappMessage: 'Olá Edvaldo! Encontrei seu portfólio e gostaria de entrar em contato.'
+    },
+    githubProjects: {
+      title: 'outros projetos',
+      loading: 'buscando repos...',
+      error: 'falha ao buscar repos'
+    },
+    terminal: {
+      welcome: 'Bem-vindo ao terminal ejunior95!\nDigite "help" para ver os comandos disponíveis.',
+      helpText: 'Comandos disponíveis:\n\n  about       - Quem sou eu\n  skills      - Minhas habilidades\n  experience  - Histórico profissional\n  projects    - Meus projetos\n  education   - Formação acadêmica\n  contact     - Como me encontrar\n  language    - Alternar EN/PT\n  clear       - Limpar terminal\n  help        - Mostrar este menu',
+      aboutText: 'Edvaldo Ramos Junior\nDesenvolvedor Fullstack Sênior @ CAST\n+10 anos de experiência\nSorocaba, SP - Brasil\n\nEspecializado em frameworks TypeScript em toda a stack.\nApaixonado por IA, open source e código limpo.',
+      skillsText: 'Frontend:  React, Angular, Next.js, TypeScript\nBackend:   Node.js, NestJS, Express.js, REST APIs\nDatabase:  PostgreSQL, MongoDB, MySQL, OracleDB\nDevOps:    Docker, Kubernetes, AWS, OpenShift\nIA/ML:     LLM, MCP, Prompt Engineering\nOutros:    Microsserviços, API Gateway, Message Queue',
+      experienceText: '[0] CAST - Desenvolvedor Fullstack Sênior (2022 - Presente)\n[1] Revelo - Treinador de IA (2025)\n[2] Infosys - Desenvolvedor Backend Sênior (2021 - 2022)\n[3] Farma Ponte - Desenvolvedor Fullstack Sênior (2020 - 2021)\n[4] Grupo Soluções - Desenvolvedor Frontend Júnior (2020)\n[5] Greenone - Desenvolvedor Frontend Júnior (2019 - 2020)\n[6] Capgemini - Técnico de Infraestrutura Júnior (2013 - 2015)',
+      projectsText: '@ EasyChat - Widget de Chat IA seguro para React\n@ DiscordIA - Arena de IA onde múltiplas IAs competem\n@ FormAI - Gere formulários a partir de linguagem natural',
+      contactText: 'Email:        e.junior95@gmail.com\nTelefone:     +55 (15) 98830-9658\nLinkedIn:     linkedin.com/in/deved-jr100\nLocalização:  Sorocaba, São Paulo, Brasil',
+      educationText: 'UNIP - Bacharelado em Análise de Sistemas (2026-2028)\nETEC - Educação Técnica em TI/Software (2010-2011)',
+      languageChanged: 'Idioma alterado com sucesso!',
+      sudoText: 'permissão negada. boa tentativa \ud83d\ude0f',
+      themeText: 'boa tentativa, mas verde é o caminho \ud83d\ude0e',
+      notFound: 'comando não encontrado:',
+      typeHelp: 'Digite "help" para ver os comandos disponíveis.'
+    },
+    blog: {
+      title: 'blog',
+      backToPortfolio: '< portfólio',
+      backToBlog: '< voltar ao blog',
+      noPosts: 'nenhum post ainda...',
+      comments: 'comentários',
+      notFound: 'post não encontrado',
+      footer: 'blog ejunior95'
     }
   }
 }

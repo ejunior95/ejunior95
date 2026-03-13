@@ -5,9 +5,10 @@ import './Header.css'
 
 interface HeaderProps {
   onNavClick: (e: React.MouseEvent<HTMLElement>, targetId: string) => void
+  onTerminalOpen: () => void
 }
 
-function Header({ onNavClick }: HeaderProps) {
+function Header({ onNavClick, onTerminalOpen }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false)
   const { language, toggleLanguage } = useLanguage()
 
@@ -41,9 +42,13 @@ function Header({ onNavClick }: HeaderProps) {
           <a href="#projects" onClick={(e) => handleClick(e, 'projects')}>{t.projects}</a>
           <a href="#education" onClick={(e) => handleClick(e, 'education')}>{t.education}</a>
           <a href="#contact" onClick={(e) => handleClick(e, 'contact')}>{t.contact}</a>
+          <a href="/blog" className="nav-blog-link">BLOG</a>
         </nav>
 
         <div className="header-actions">
+          <button className="terminal-btn" onClick={onTerminalOpen} title="Terminal">
+            &gt;_
+          </button>
           <button className="lang-toggle" onClick={toggleLanguage} title={language === 'pt' ? 'English (EN)' : 'Português (Brasil)'}>
             {language === 'pt' ? 'EN' : 'PT-BR'}
           </button>
@@ -60,6 +65,10 @@ function Header({ onNavClick }: HeaderProps) {
         </div>
         
         <div className="mobile-controls">
+          {/* Terminal Button */}
+          <button className="terminal-btn" onClick={onTerminalOpen} title="Terminal">
+            &gt;_
+          </button>
           {/* Language Toggle Button */}
           <button className="lang-toggle mobile-lang-toggle" onClick={toggleLanguage} title={language === 'pt' ? 'English (EN)' : 'Português (Brasil)'}>
             {language === 'pt' ? 'EN' : 'PT-BR'}
@@ -84,6 +93,7 @@ function Header({ onNavClick }: HeaderProps) {
           <a href="#projects" onClick={(e) => handleClick(e, 'projects')}>{t.projects}</a>
           <a href="#education" onClick={(e) => handleClick(e, 'education')}>{t.education}</a>
           <a href="#contact" onClick={(e) => handleClick(e, 'contact')}>{t.contact}</a>
+          <a href="/blog" className="nav-blog-link">BLOG</a>
           <a href="https://www.linkedin.com/in/deved-jr100" target="_blank" rel="noopener noreferrer" className="enroll-btn">
               {'()'} =&gt; {'{ '+ t.linkedin + ' }'}
           </a>

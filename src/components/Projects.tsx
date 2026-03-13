@@ -1,6 +1,7 @@
 import { ExternalLink } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 import { translations } from '../i18n/translations'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 import DiscordiaImg  from '../assets/discordia-preview.png'
 import EasyChatImg from '../assets/easychat-preview.png'
 import './Projects.css'
@@ -8,9 +9,10 @@ import './Projects.css'
 function Projects() {
   const { language } = useLanguage()
   const t = translations[language].projects
+  const { ref, isVisible } = useScrollReveal<HTMLElement>()
 
   return (
-    <section id="projects" className="section">
+    <section id="projects" className={`section ${isVisible ? 'scroll-visible' : 'scroll-hidden'}`} ref={ref}>
       <h2 className="section-title">
         <span className="code-bracket">{"@"}</span> {t.title}
       </h2>

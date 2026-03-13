@@ -1,14 +1,18 @@
+import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import StatsInfo from './components/StatsInfo'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
+import GitHubProjects from './components/GitHubProjects'
 import Education from './components/Education'
 import Certifications from './components/Certifications'
+import Achievements from './components/Achievements'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import VideoBackground from './components/VideoBackground'
+import Terminal from './components/Terminal'
 import { useLanguage } from './contexts/LanguageContext'
 import { translations } from './i18n/translations'
 import './App.css'
@@ -16,6 +20,7 @@ import './App.css'
 function AppContent() {
   const { language } = useLanguage()
   const t = translations[language]
+  const [terminalOpen, setTerminalOpen] = useState(false)
 
   const handleNavClick = (e: React.MouseEvent<HTMLElement>, targetId: string) => {
     e.preventDefault()
@@ -164,7 +169,7 @@ function AppContent() {
   return (
     <div className="app">
       <VideoBackground />
-      <Header onNavClick={handleNavClick} />
+      <Header onNavClick={handleNavClick} onTerminalOpen={() => setTerminalOpen(true)} />
     
       <main className="main">
         <Hero />
@@ -172,11 +177,14 @@ function AppContent() {
         <Skills skills={skills} />
         <Experience experiences={experiences} />
         <Projects />
+        <GitHubProjects />
         <Education education={education} />
         <Certifications />
+        <Achievements />
         <Contact />
         <Footer />
       </main>
+      <Terminal isOpen={terminalOpen} onClose={() => setTerminalOpen(false)} />
     </div>
   )
 }

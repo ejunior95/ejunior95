@@ -1,6 +1,7 @@
 import { Clock, MapPin } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 import { translations } from '../i18n/translations'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 import './Experience.css'
 
 interface ExperienceItem {
@@ -23,15 +24,16 @@ interface ExperienceProps {
 function Experience({ experiences }: ExperienceProps) {
   const { language } = useLanguage()
   const t = translations[language].experience
+  const { ref, isVisible } = useScrollReveal<HTMLElement>()
 
   return (
-    <section id="experience" className="section">
+    <section id="experience" className={`section ${isVisible ? 'scroll-visible' : 'scroll-hidden'}`} ref={ref}>
       <h2 className="section-title">
         <span className="code-bracket">{"["}</span> {t.title} <span className="code-bracket">{"]"}</span>
       </h2>
       <div className="timeline">
         {experiences.map((exp, index) => (
-          <div key={index} className="timeline-item">
+          <div key={index} className="timeline-item" style={{ transitionDelay: `${index * 0.1}s` }}>
             <div className="timeline-marker">
               <span className="timeline-index">{(experiences.length - index) - 1}</span>
             </div>

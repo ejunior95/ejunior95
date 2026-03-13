@@ -1,14 +1,16 @@
 import { ScrollText, Globe } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 import { translations } from '../i18n/translations'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 import './Certifications.css'
 
 function Certifications() {
   const { language } = useLanguage()
   const t = translations[language].certifications
+  const { ref, isVisible } = useScrollReveal<HTMLElement>()
 
   return (
-    <section className="section">
+    <section className={`section ${isVisible ? 'scroll-visible' : 'scroll-hidden'}`} ref={ref}>
       <h2 className="section-title">
         <span className="code-bracket">{"/*"}</span> {t.title} <span className="code-bracket">{"*/"}</span>
       </h2>
