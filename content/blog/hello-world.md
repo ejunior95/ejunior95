@@ -8,7 +8,7 @@ summaryEn: "Welcome to my blog! In this first post, I share why I decided to cre
 slug: "hello-world"
 ---
 
-## 🇧🇷 Português
+## Português (PT-BR)
 
 Olá! Seja bem-vindo ao meu blog.
 
@@ -41,7 +41,7 @@ Fique à vontade para comentar e compartilhar. Nos vemos no próximo post! 🚀
 
 ---
 
-## 🇺🇸 English
+## English (EN)
 
 Hello! Welcome to my blog.
 
