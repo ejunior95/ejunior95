@@ -15,6 +15,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
+  user-select: none;
 }
 
 .achievement-card.unlocked {
@@ -31,12 +32,20 @@
   filter: grayscale(1);
 }
 
+.code-bracket {
+  color: #09ec42;
+}
+
+.code-comment {
+  color: #fff;
+}
+
 .achievement-icon {
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 
 .achievement-title {
-  font-size: 0.45rem;
+  font-size: .7rem;
   color: #09ec42;
   line-height: 1.6;
 }
@@ -46,7 +55,7 @@
 }
 
 .achievement-description {
-  font-size: 0.38rem;
+  font-size: .55rem;
   color: #a2a2a2;
   line-height: 1.8;
 }

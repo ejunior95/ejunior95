@@ -21,7 +21,7 @@ function BlogPost() {
         <div className="blog-not-found">
           <span className="code-comment">{'// 404 — '}{t.notFound}</span>
           <Link to="/blog" className="blog-back-link">
-            <ArrowLeft size={14} />
+            <ArrowLeft size={16} />
             {t.backToBlog}
           </Link>
         </div>
@@ -33,7 +33,7 @@ function BlogPost() {
     <BlogLayout>
       <article className="blog-article">
         <Link to="/blog" className="blog-back-link">
-          <ArrowLeft size={14} />
+          <ArrowLeft size={16} />
           {t.backToBlog}
         </Link>
 
@@ -43,13 +43,14 @@ function BlogPost() {
           </h1>
           <div className="blog-article-meta">
             <span className="blog-article-date">
-              <Calendar size={12} />
+              <Calendar size={22} />
               {new Date(post.date).toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US', {
                 year: 'numeric', month: 'long', day: 'numeric'
               })}
             </span>
             <div className="blog-article-tags">
-              <Tag size={10} />
+              <span> | </span>
+              <Tag size={18} color='#09ec42' />
               {post.tags.map(tag => (
                 <span key={tag} className="blog-tag">{tag}</span>
               ))}

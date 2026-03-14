@@ -15,12 +15,12 @@ function BlogList() {
     <BlogLayout>
       <div className="blog-list">
         <h1 className="blog-list-title">
-          <span className="code-comment">{'// '}</span>{t.title}
+          <span className="code-comment">{'-> '}</span>{t.title}
         </h1>
 
         {posts.length === 0 ? (
           <p className="blog-empty">
-            <span className="code-comment">{'// '}{t.noPosts}</span>
+            <span className="code-comment">{'!'}{t.noPosts}</span>
           </p>
         ) : (
           <div className="blog-posts">
@@ -31,7 +31,7 @@ function BlogList() {
                 </h2>
                 <div className="blog-post-meta">
                   <span className="blog-post-date">
-                    <Calendar size={12} />
+                    <Calendar size={22} />
                     {new Date(post.date).toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US', {
                       year: 'numeric', month: 'long', day: 'numeric'
                     })}
@@ -41,7 +41,7 @@ function BlogList() {
                   {language === 'pt' ? post.summary : post.summaryEn}
                 </p>
                 <div className="blog-post-tags">
-                  <Tag size={10} />
+                  <Tag size={18} color='#09ec42' />
                   {post.tags.map(tag => (
                     <span key={tag} className="blog-tag">{tag}</span>
                   ))}

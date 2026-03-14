@@ -29,7 +29,8 @@ function Achievements() {
   return (
     <section className={`section ${isVisible ? 'scroll-visible' : 'scroll-hidden'}`} ref={ref}>
       <h2 className="section-title">
-        <span className="code-comment">{'// '}{t.title}</span>
+        <span className="code-bracket">{"// "}</span>
+        <span className="code-comment">{t.title}</span>
       </h2>
       <div className="achievements-grid">
         {achievements.map((achievement, index) => (

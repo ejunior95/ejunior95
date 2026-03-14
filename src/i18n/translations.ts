@@ -151,13 +151,13 @@ export const translations = {
       typeHelp: 'Type "help" for available commands.'
     },
     blog: {
-      title: 'blog',
-      backToPortfolio: '< portfolio',
-      backToBlog: '< back to blog',
-      noPosts: 'no posts yet...',
-      comments: 'comments',
-      notFound: 'post not found',
-      footer: 'ejunior95 blog'
+      title: 'My humble blog',
+      backToPortfolio: '<- Back to portfolio',
+      backToBlog: 'Go back to posts',
+      noPosts: 'No posts yet...',
+      comments: 'Comments',
+      notFound: 'Post not found',
+      footer: 'BLOG - ejunior95'
     }
   },
   pt: {
@@ -312,13 +312,13 @@ export const translations = {
       typeHelp: 'Digite "help" para ver os comandos disponíveis.'
     },
     blog: {
-      title: 'blog',
-      backToPortfolio: '< portfólio',
-      backToBlog: '< voltar ao blog',
-      noPosts: 'nenhum post ainda...',
-      comments: 'comentários',
-      notFound: 'post não encontrado',
-      footer: 'blog ejunior95'
+      title: 'Meu humilde blog',
+      backToPortfolio: '<- Voltar para portfólio',
+      backToBlog: 'Voltar aos posts',
+      noPosts: 'Nenhum post ainda...',
+      comments: 'Comentários',
+      notFound: 'Post não encontrado',
+      footer: 'BLOG - ejunior95'
     }
   }
 }

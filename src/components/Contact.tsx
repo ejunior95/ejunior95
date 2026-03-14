@@ -18,13 +18,13 @@ function Contact() {
       </h2>
       <div className="contact-grid">
         <a href="mailto:e.junior95@gmail.com" className="contact-card">
-          <span className="contact-icon"><Mail size={28} /></span>
+          <span className='contact-icon-email'>📨</span>
           <span className="contact-label">{t.email}</span>
           <span className="contact-value">e.junior95@gmail.com</span>
           <ExternalLink size={16} style={{ marginLeft: '4px', opacity: 0.6 }} />
         </a>
         <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="contact-card">
-          <span className="contact-icon"><Phone size={28} /></span>
+          <span className='contact-icon-phone'>📞</span>
           <span className="contact-label">{t.phone}</span>
           <span className="contact-value">+ 55 (15) 98830-9658</span>
           <ExternalLink size={16} style={{ marginLeft: '4px', opacity: 0.6 }} />
