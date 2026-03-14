@@ -20,12 +20,17 @@
   border: 1px solid #1a1a1a;
   border-radius: 8px;
   width: 100%;
-  max-width: 720px;
+  max-width: 1080px;
   max-height: 80vh;
   display: flex;
   flex-direction: column;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
   animation: slide-up 0.2s ease-out;
+}
+
+.terminal-window.is-dragging {
+  animation: none;
+  user-select: none;
 }
 
 @keyframes slide-up {
@@ -41,6 +46,11 @@
   border-bottom: 1px solid #1a1a1a;
   border-radius: 8px 8px 0 0;
   gap: 0.8rem;
+  cursor: grab;
+}
+
+.terminal-titlebar:active {
+  cursor: grabbing;
 }
 
 .terminal-dots {
@@ -62,7 +72,7 @@
 .terminal-title {
   flex: 1;
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   color: #a2a2a2;
 }
 
@@ -96,17 +106,17 @@
 .terminal-prompt {
   color: #09ec42;
   margin-right: 0.5rem;
-  font-size: 0.5rem;
+  font-size: 0.85rem;
 }
 
 .terminal-line.input span {
-  font-size: 0.5rem;
+  font-size: 0.85rem;
   color: #fff;
 }
 
 .terminal-output {
   font-family: 'Press Start 2P', monospace;
-  font-size: 0.45rem;
+  font-size: 0.75rem;
   color: #a2a2a2;
   line-height: 2;
   margin: 0;
@@ -126,9 +136,16 @@
   outline: none;
   color: #fff;
   font-family: 'Press Start 2P', monospace;
-  font-size: 0.5rem;
+  font-size: 0.85rem;
   flex: 1;
   caret-color: #09ec42;
+}
+
+.terminal-tab-hint {
+  font-size: 0.65rem;
+  color: #a2a2a2;
+  margin: 0;
+  white-space: pre-wrap;
 }
 
 /* Terminal button in header */
@@ -149,40 +166,155 @@
   background: rgba(9, 236, 66, 0.1);
 }
 
-@media (max-width: 768px) {
-  .terminal-window {
-    max-height: 90vh;
-    border-radius: 4px;
-  }
+/* ===== Responsive Breakpoints ===== */
 
-  .terminal-body {
-    min-height: 250px;
-    max-height: calc(90vh - 40px);
-  }
-
+@media (max-width: 1200px) {
   .terminal-prompt {
-    font-size: 0.4rem;
+    font-size: 0.75rem;
   }
 
   .terminal-input {
-    font-size: 0.4rem;
+    font-size: 0.75rem;
   }
 
   .terminal-output {
-    font-size: 0.35rem;
+    font-size: 0.65rem;
   }
 
   .terminal-line.input span {
-    font-size: 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .terminal-title {
+    font-size: 0.6rem;
+  }
+
+  .terminal-tab-hint {
+    font-size: 0.55rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .terminal-prompt {
+    font-size: 0.7rem;
+  }
+
+  .terminal-input {
+    font-size: 0.7rem;
+  }
+
+  .terminal-output {
+    font-size: 0.6rem;
+  }
+
+  .terminal-line.input span {
+    font-size: 0.7rem;
+  }
+
+  .terminal-title {
+    font-size: 0.55rem;
+  }
+
+  .terminal-tab-hint {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .terminal-overlay {
+    padding: 0;
+  }
+
+  .terminal-window {
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .terminal-titlebar {
+    border-radius: 0;
+    cursor: default;
+  }
+
+  .terminal-titlebar:active {
+    cursor: default;
+  }
+
+  .terminal-close {
+    padding: 0.5rem;
+    color: #ff5f57;
+  }
+
+  .terminal-close svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .terminal-dots {
+    display: none;
+  }
+
+  .terminal-body {
+    min-height: auto;
+    max-height: none;
+    flex: 1;
+  }
+
+  .terminal-prompt {
+    font-size: 0.6rem;
+  }
+
+  .terminal-input {
+    font-size: 0.6rem;
+  }
+
+  .terminal-output {
+    font-size: 0.55rem;
+  }
+
+  .terminal-line.input span {
+    font-size: 0.6rem;
+  }
+
+  .terminal-title {
+    font-size: 0.5rem;
+  }
+
+  .terminal-tab-hint {
+    font-size: 0.45rem;
   }
 }
 
 @media (max-width: 480px) {
-  .terminal-overlay {
-    padding: 0.5rem;
-  }
-
   .terminal-body {
     padding: 0.6rem;
+  }
+
+  .terminal-prompt {
+    font-size: 0.55rem;
+  }
+
+  .terminal-input {
+    font-size: 0.55rem;
+  }
+
+  .terminal-output {
+    font-size: 0.5rem;
+  }
+
+  .terminal-line.input span {
+    font-size: 0.55rem;
+  }
+
+  .terminal-title {
+    font-size: 0.45rem;
+  }
+
+  .terminal-tab-hint {
+    font-size: 0.4rem;
   }
 }

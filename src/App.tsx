@@ -169,7 +169,7 @@ function AppContent() {
   return (
     <div className="app">
       <VideoBackground />
-      <Header onNavClick={handleNavClick} onTerminalOpen={() => setTerminalOpen(true)} />
+      <Header onNavClick={handleNavClick} onTerminalToggle={() => setTerminalOpen(prev => !prev)} />
     
       <main className="main">
         <Hero />

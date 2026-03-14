@@ -5,10 +5,10 @@ import './Header.css'
 
 interface HeaderProps {
   onNavClick: (e: React.MouseEvent<HTMLElement>, targetId: string) => void
-  onTerminalOpen: () => void
+  onTerminalToggle: () => void
 }
 
-function Header({ onNavClick, onTerminalOpen }: HeaderProps) {
+function Header({ onNavClick, onTerminalToggle }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false)
   const { language, toggleLanguage } = useLanguage()
 
@@ -46,7 +46,7 @@ function Header({ onNavClick, onTerminalOpen }: HeaderProps) {
         </nav>
 
         <div className="header-actions">
-          <button className="terminal-btn" onClick={onTerminalOpen} title="Terminal">
+          <button className="terminal-btn" onClick={onTerminalToggle} title="Terminal">
             &gt;_
           </button>
           <button className="lang-toggle" onClick={toggleLanguage} title={language === 'pt' ? 'English (EN)' : 'Português (Brasil)'}>
@@ -66,7 +66,7 @@ function Header({ onNavClick, onTerminalOpen }: HeaderProps) {
         
         <div className="mobile-controls">
           {/* Terminal Button */}
-          <button className="terminal-btn" onClick={onTerminalOpen} title="Terminal">
+          <button className="terminal-btn" onClick={onTerminalToggle} title="Terminal">
             &gt;_
           </button>
           {/* Language Toggle Button */}

@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, MapPin, ExternalLink } from 'lucide-react'
+import { Linkedin, MapPin, ExternalLink } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 import { translations } from '../i18n/translations'
 import { useScrollReveal } from '../hooks/useScrollReveal'

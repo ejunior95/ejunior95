@@ -14,6 +14,13 @@ interface TerminalLine {
   text: string
 }
 
+const AVAILABLE_COMMANDS = [
+  'help', 'about', 'skills', 'experience', 'projects',
+  'contact', 'education', 'language', 'clear', 'theme'
+]
+
+const MOBILE_BREAKPOINT = 768
+
 function Terminal({ isOpen, onClose }: TerminalProps) {
   const { language, toggleLanguage } = useLanguage()
   const t = translations[language].terminal
@@ -25,6 +32,12 @@ function Terminal({ isOpen, onClose }: TerminalProps) {
   const [cmdIndex, setCmdIndex] = useState(-1)
   const inputRef = useRef<HTMLInputElement>(null)
   const terminalRef = useRef<HTMLDivElement>(null)
+  const windowRef = useRef<HTMLDivElement>(null)
+
+  // Drag state
+  const [isDragging, setIsDragging] = useState(false)
+  const [position, setPosition] = useState<{ x: number; y: number } | null>(null)
+  const dragOffset = useRef({ x: 0, y: 0 })
 
   const scrollToBottom = () => {
     if (terminalRef.current) {
@@ -40,6 +53,9 @@ function Terminal({ isOpen, onClose }: TerminalProps) {
     if (isOpen && inputRef.current) {
       inputRef.current.focus()
     }
+    if (isOpen) {
+      setPosition(null)
+    }
   }, [isOpen])
 
   useEffect(() => {
@@ -50,6 +66,41 @@ function Terminal({ isOpen, onClose }: TerminalProps) {
     }
     return () => { document.body.style.overflow = '' }
   }, [isOpen])
+
+  // Drag event handlers
+  const handleDragStart = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    if (window.innerWidth <= MOBILE_BREAKPOINT) return
+    const el = windowRef.current
+    if (!el) return
+
+    const rect = el.getBoundingClientRect()
+    dragOffset.current = {
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    }
+    setIsDragging(true)
+  }, [])
+
+  useEffect(() => {
+    if (!isDragging) return
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const newX = Math.max(0, Math.min(e.clientX - dragOffset.current.x, window.innerWidth - 200))
+      const newY = Math.max(0, Math.min(e.clientY - dragOffset.current.y, window.innerHeight - 50))
+      setPosition({ x: newX, y: newY })
+    }
+
+    const handleMouseUp = () => {
+      setIsDragging(false)
+    }
+
+    document.addEventListener('mousemove', handleMouseMove)
+    document.addEventListener('mouseup', handleMouseUp)
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove)
+      document.removeEventListener('mouseup', handleMouseUp)
+    }
+  }, [isDragging])
 
   const executeCommand = useCallback((cmd: string) => {
     const trimmed = cmd.trim().toLowerCase()
@@ -94,6 +145,43 @@ function Terminal({ isOpen, onClose }: TerminalProps) {
   }, [language, toggleLanguage])
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    // Ctrl+C — interrupt current line
+    if (e.ctrlKey && e.key === 'c') {
+      e.preventDefault()
+      setHistory(prev => [
+        ...prev,
+        { type: 'input', text: input + '^C' }
+      ])
+      setInput('')
+      setCmdIndex(-1)
+      return
+    }
+
+    // Ctrl+L — clear screen
+    if (e.ctrlKey && e.key === 'l') {
+      e.preventDefault()
+      setHistory([])
+      setInput('')
+      return
+    }
+
+    // Tab — autocomplete
+    if (e.key === 'Tab') {
+      e.preventDefault()
+      const partial = input.trim().toLowerCase()
+      if (!partial) return
+      const matches = AVAILABLE_COMMANDS.filter(cmd => cmd.startsWith(partial))
+      if (matches.length === 1) {
+        setInput(matches[0])
+      } else if (matches.length > 1) {
+        setHistory(prev => [
+          ...prev,
+          { type: 'output', text: matches.join('  ') }
+        ])
+      }
+      return
+    }
+
     if (e.key === 'Enter') {
       executeCommand(input)
       if (input.trim()) {
@@ -125,10 +213,19 @@ function Terminal({ isOpen, onClose }: TerminalProps) {
 
   if (!isOpen) return null
 
+  const windowStyle: React.CSSProperties = position
+    ? { position: 'fixed', left: position.x, top: position.y }
+    : {}
+
   return (
     <div className="terminal-overlay" onClick={onClose}>
-      <div className="terminal-window" onClick={e => e.stopPropagation()}>
-        <div className="terminal-titlebar">
+      <div
+        ref={windowRef}
+        className={`terminal-window${isDragging ? ' is-dragging' : ''}`}
+        style={windowStyle}
+        onClick={e => e.stopPropagation()}
+      >
+        <div className="terminal-titlebar" onMouseDown={handleDragStart}>
           <div className="terminal-dots">
             <span className="dot dot-red" onClick={onClose}></span>
             <span className="dot dot-yellow"></span>
