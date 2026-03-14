@@ -145,8 +145,8 @@ export const translations = {
       contactText: 'Email:    e.junior95@gmail.com\nPhone:    +55 (15) 98830-9658\nLinkedIn: linkedin.com/in/deved-jr100\nLocation: Sorocaba, São Paulo, Brazil',
       educationText: 'UNIP - Bachelor in Computer Systems Analysis (2026-2028)\nETEC - Technical Education in IT/Software (2010-2011)',
       languageChanged: 'Language changed successfully!',
-      sudoText: 'permission denied. nice try though \ud83d\ude0f',
-      themeText: 'nice try, but green is the way \ud83d\ude0e',
+      sudoText: 'permission denied. nice try though ;-)',
+      themeText: 'nice try, but green is the way xD',
       notFound: 'command not found:',
       typeHelp: 'Type "help" for available commands.'
     },
@@ -306,8 +306,8 @@ export const translations = {
       contactText: 'Email:        e.junior95@gmail.com\nTelefone:     +55 (15) 98830-9658\nLinkedIn:     linkedin.com/in/deved-jr100\nLocalização:  Sorocaba, São Paulo, Brasil',
       educationText: 'UNIP - Bacharelado em Análise de Sistemas (2026-2028)\nETEC - Educação Técnica em TI/Software (2010-2011)',
       languageChanged: 'Idioma alterado com sucesso!',
-      sudoText: 'permissão negada. boa tentativa \ud83d\ude0f',
-      themeText: 'boa tentativa, mas verde é o caminho \ud83d\ude0e',
+      sudoText: 'permissão negada. boa tentativa ;-)',
+      themeText: 'boa tentativa, mas verde é o caminho xD',
       notFound: 'comando não encontrado:',
       typeHelp: 'Digite "help" para ver os comandos disponíveis.'
     },
