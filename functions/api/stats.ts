@@ -82,8 +82,12 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
 
   if (!env.CF_API_TOKEN || !env.CF_ACCOUNT_ID || !env.CF_SITE_TAG) {
     // Misconfigured — fail silently with no-store so the client can hide the widget.
+    const missing: string[] = []
+    if (!env.CF_API_TOKEN) missing.push('CF_API_TOKEN')
+    if (!env.CF_ACCOUNT_ID) missing.push('CF_ACCOUNT_ID')
+    if (!env.CF_SITE_TAG) missing.push('CF_SITE_TAG')
     return jsonResponse(
-      { error: 'analytics_not_configured' },
+      { error: 'analytics_not_configured', missing },
       { status: 200, headers: { 'Cache-Control': 'no-store' } }
     )
   }
@@ -138,8 +142,19 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
     })
 
     if (!res.ok) {
+      let bodySnippet = ''
+      try {
+        const text = await res.text()
+        bodySnippet = text.slice(0, 200)
+      } catch {
+        // ignore body read errors
+      }
       return jsonResponse(
-        { error: `upstream_${res.status}` },
+        {
+          error: `upstream_${res.status}`,
+          statusText: res.statusText,
+          bodySnippet
+        },
         { status: 200, headers: { 'Cache-Control': 'no-store' } }
       )
     }

@@ -70,12 +70,23 @@ export function useSiteStats(period: StatsPeriod): UseSiteStatsResult {
     const controller = new AbortController()
 
     fetch(`/api/stats?period=${period}`, { signal: controller.signal })
-      .then(res => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      .then(async res => {
+        if (!res.ok) {
+          let bodyText = ''
+          try { bodyText = (await res.text()).slice(0, 300) } catch { /* ignore */ }
+          console.warn('[stats] HTTP error', res.status, res.statusText, bodyText)
+          throw new Error(`HTTP ${res.status}`)
+        }
         return res.json()
       })
-      .then((json: SiteStats & { error?: string }) => {
+      .then((json: SiteStats & { error?: string; missing?: string[]; detail?: string; statusText?: string; bodySnippet?: string }) => {
         if (json.error) {
+          console.warn('[stats] API error', json.error, {
+            missing: json.missing,
+            detail: json.detail,
+            statusText: json.statusText,
+            bodySnippet: json.bodySnippet
+          })
           setError(true)
           setData(null)
           setLoading(false)
@@ -93,6 +104,7 @@ export function useSiteStats(period: StatsPeriod): UseSiteStatsResult {
       })
       .catch(err => {
         if (err.name === 'AbortError') return
+        console.error('[stats] fetch failed', err)
         setError(true)
         setLoading(false)
       })
