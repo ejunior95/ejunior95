@@ -39,7 +39,6 @@ interface CountryGroup {
 interface TotalsGroup {
   count: number
   sum?: { visits?: number }
-  uniq?: { uniques?: number }
 }
 
 interface GraphQLResponse {
@@ -107,7 +106,6 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
           ) {
             count
             sum { visits }
-            uniq { uniques }
           }
           countries: rumPageloadEventsAdaptiveGroups(
             limit: 10
@@ -179,7 +177,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
   const countries = account?.countries ?? []
 
   const pageViews = totals?.count ?? 0
-  const visitors = totals?.uniq?.uniques ?? totals?.sum?.visits ?? 0
+  const visitors = totals?.sum?.visits ?? 0
 
   const countryTotal = countries.reduce((acc, c) => acc + (c.count ?? 0), 0) || pageViews || 1
   const topCountries = countries
