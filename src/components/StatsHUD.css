@@ -1,0 +1,293 @@
+/* StatsHUD — retro HUD overlay with live Cloudflare Analytics data */
+
+.stats-hud,
+.stats-hud-chip {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 50;
+  font-family: 'Press Start 2P', monospace;
+  color: #fff;
+}
+
+/* ---------------- Chip (collapsed) ---------------- */
+.stats-hud-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  background: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 8px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.stats-hud-chip:hover,
+.stats-hud-chip:focus-visible {
+  border-color: #09ec42;
+  color: #09ec42;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* ---------------- Panel (expanded) ---------------- */
+.stats-hud {
+  width: 280px;
+  background: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.stats-hud:hover,
+.stats-hud:focus-within {
+  border-color: #09ec42;
+}
+
+/* ---------------- Header ---------------- */
+.stats-hud-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #1a1a1a;
+  background: rgba(9, 236, 66, 0.04);
+}
+
+.stats-hud-title {
+  flex: 1;
+  font-size: 8px;
+  letter-spacing: 0.05em;
+  color: #09ec42;
+}
+
+.stats-hud-min {
+  background: transparent;
+  border: 1px solid #1a1a1a;
+  color: #a2a2a2;
+  width: 22px;
+  height: 22px;
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.stats-hud-min:hover,
+.stats-hud-min:focus-visible {
+  color: #09ec42;
+  border-color: #09ec42;
+  outline: none;
+}
+
+/* ---------------- LED (pulsing dot) ---------------- */
+.stats-hud-led {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #09ec42;
+  box-shadow: 0 0 6px #09ec42;
+  flex-shrink: 0;
+  animation: stats-hud-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes stats-hud-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+/* ---------------- Tabs ---------------- */
+.stats-hud-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.stats-hud-tab {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-right: 1px solid #1a1a1a;
+  color: #a2a2a2;
+  font-family: inherit;
+  font-size: 7px;
+  letter-spacing: 0.05em;
+  padding: 0.55rem 0.25rem;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.stats-hud-tab:last-child { border-right: none; }
+
+.stats-hud-tab:hover,
+.stats-hud-tab:focus-visible {
+  color: #09ec42;
+  outline: none;
+}
+
+.stats-hud-tab.is-active {
+  color: #09ec42;
+  background: rgba(9, 236, 66, 0.08);
+  border-top: 1px solid #09ec42;
+  margin-top: -1px;
+}
+
+/* ---------------- Body ---------------- */
+.stats-hud-body {
+  padding: 0.85rem 0.85rem 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-size: 8px;
+  line-height: 1.4;
+}
+
+.stats-hud-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.stats-hud-key {
+  color: #a2a2a2;
+}
+
+.stats-hud-val {
+  color: #09ec42;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+}
+
+.stats-hud-countries-label {
+  color: #a2a2a2;
+  margin-top: 0.35rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed #1a1a1a;
+}
+
+.stats-hud-countries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.stats-hud-country {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 7px;
+  letter-spacing: 0.04em;
+}
+
+.stats-hud-flag {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.stats-hud-code {
+  color: #fff;
+  width: 18px;
+}
+
+.stats-hud-bar {
+  position: relative;
+  height: 6px;
+  background: #1a1a1a;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.stats-hud-bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: #09ec42;
+  box-shadow: 0 0 4px rgba(9, 236, 66, 0.6);
+  transition: width 0.4s ease;
+}
+
+.stats-hud-pct {
+  color: #09ec42;
+  min-width: 28px;
+  text-align: right;
+}
+
+.stats-hud-empty {
+  color: #a2a2a2;
+  text-align: center;
+  display: block;
+}
+
+/* ---------------- Skeleton ---------------- */
+.stats-hud-skeleton {
+  display: inline-block;
+  width: 36px;
+  height: 10px;
+  background: linear-gradient(90deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+  background-size: 200% 100%;
+  animation: stats-hud-shimmer 1.4s linear infinite;
+  border-radius: 1px;
+  vertical-align: middle;
+}
+
+.stats-hud-skeleton-line { width: 100%; height: 8px; }
+
+@keyframes stats-hud-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  .stats-hud,
+  .stats-hud-chip {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .stats-hud {
+    width: calc(100vw - 2rem);
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-hud,
+  .stats-hud-chip {
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
+
+  .stats-hud-chip {
+    font-size: 7px;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .stats-hud-body {
+    font-size: 7px;
+  }
+
+  .stats-hud-val {
+    font-size: 9px;
+  }
+}

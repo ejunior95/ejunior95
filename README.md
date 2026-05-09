@@ -111,6 +111,28 @@ const greatDeveloper = {
 
 ---
 
+## Live Stats HUD (Cloudflare Pages)
+
+The site shows a floating HUD with live visitor metrics pulled from
+**Cloudflare Web Analytics** through a Pages Function (`functions/api/stats.ts`).
+The function calls the Cloudflare GraphQL Analytics API server-side, so the API
+token is never exposed to the browser.
+
+To enable it, set these variables in **Cloudflare Pages → Settings →
+Environment variables** (Production *and* Preview):
+
+| Variable        | Description                                                                 |
+| --------------- | --------------------------------------------------------------------------- |
+| `CF_API_TOKEN`  | API token with permission `Account → Account Analytics: Read`               |
+| `CF_ACCOUNT_ID` | Cloudflare Account ID (right sidebar of the Cloudflare dashboard)           |
+| `CF_SITE_TAG`   | Web Analytics **Site Tag** (Analytics → Web Analytics → site → *Site Tag*)  |
+
+If any variable is missing or the API call fails, the HUD hides itself silently
+and the rest of the site keeps working. Responses are cached for 1h on the edge
+(`Cache-Control: s-maxage=3600`) and another 1h in `localStorage`.
+
+---
+
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=ejunior95&color=012dcf&style=for-the-badge&label=Profile+Views" alt="Profile Views"/>
 </div>

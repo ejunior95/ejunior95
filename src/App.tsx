@@ -13,6 +13,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import VideoBackground from './components/VideoBackground'
 import Terminal from './components/Terminal'
+import StatsHUD from './components/StatsHUD'
 import { useLanguage } from './contexts/LanguageContext'
 import { translations } from './i18n/translations'
 import './App.css'
@@ -185,6 +186,7 @@ function AppContent() {
         <Footer />
       </main>
       <Terminal isOpen={terminalOpen} onClose={() => setTerminalOpen(false)} />
+      <StatsHUD />
     </div>
   )
 }

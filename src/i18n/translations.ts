@@ -158,6 +158,18 @@ export const translations = {
       comments: 'Comments',
       notFound: 'Post not found',
       footer: 'BLOG - ejunior95'
+    },
+    liveStats: {
+      title: 'LIVE STATS',
+      visitors: 'visitors',
+      views: 'views',
+      topCountries: 'top countries',
+      period24h: '24H',
+      period7d: '7D',
+      period30d: '30D',
+      collapsedLabel: 'STATS',
+      expandLabel: 'Show live stats',
+      minimizeLabel: 'Minimize'
     }
   },
   pt: {
@@ -319,6 +331,18 @@ export const translations = {
       comments: 'Comentários',
       notFound: 'Post não encontrado',
       footer: 'BLOG - ejunior95'
+    },
+    liveStats: {
+      title: 'LIVE STATS',
+      visitors: 'visitantes',
+      views: 'views',
+      topCountries: 'top países',
+      period24h: '24H',
+      period7d: '7D',
+      period30d: '30D',
+      collapsedLabel: 'STATS',
+      expandLabel: 'Mostrar estatísticas',
+      minimizeLabel: 'Minimizar'
     }
   }
 }
