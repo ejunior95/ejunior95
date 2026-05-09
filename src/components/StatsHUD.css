@@ -261,33 +261,116 @@
 @media (max-width: 768px) {
   .stats-hud,
   .stats-hud-chip {
-    right: 1rem;
-    bottom: 1rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
   }
 
-  .stats-hud {
-    width: calc(100vw - 2rem);
-    max-width: 320px;
+  .stats-hud-chip {
+    justify-content: center;
+    font-size: 10px;
+    padding: 0.85rem 1rem;
+    letter-spacing: 0.08em;
+  }
+
+  .stats-hud-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .stats-hud-title {
+    font-size: 10px;
+  }
+
+  .stats-hud-min {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .stats-hud-tab {
+    font-size: 9px;
+    padding: 0.7rem 0.25rem;
+  }
+
+  .stats-hud-body {
+    padding: 1rem 1rem 1.1rem;
+    gap: 0.7rem;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .stats-hud-val {
+    font-size: 12px;
+  }
+
+  .stats-hud-country {
+    grid-template-columns: auto auto 1fr auto;
+    gap: 0.6rem;
+    font-size: 9px;
+  }
+
+  .stats-hud-flag {
+    font-size: 16px;
+  }
+
+  .stats-hud-code {
+    width: 24px;
+  }
+
+  .stats-hud-bar {
+    height: 8px;
+  }
+
+  .stats-hud-pct {
+    min-width: 36px;
   }
 }
 
 @media (max-width: 480px) {
-  .stats-hud,
   .stats-hud-chip {
-    right: 0.75rem;
-    bottom: 0.75rem;
+    font-size: 9px;
+    padding: 0.75rem 0.9rem;
   }
 
+  .stats-hud-title,
   .stats-hud-chip {
-    font-size: 7px;
-    padding: 0.5rem 0.7rem;
+    letter-spacing: 0.06em;
+  }
+
+  .stats-hud-tab {
+    font-size: 8px;
   }
 
   .stats-hud-body {
-    font-size: 7px;
+    font-size: 9px;
   }
 
   .stats-hud-val {
-    font-size: 9px;
+    font-size: 11px;
+  }
+
+  .stats-hud-country {
+    font-size: 8px;
+  }
+}
+
+/* ---------------- Reduced motion ---------------- */
+@media (prefers-reduced-motion: reduce) {
+  .stats-hud-led {
+    animation: none;
+  }
+
+  .stats-hud-skeleton {
+    animation: none;
+  }
+
+  .stats-hud-bar-fill {
+    transition: none;
   }
 }

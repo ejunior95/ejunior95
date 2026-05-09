@@ -167,7 +167,7 @@ export const translations = {
       period24h: '24H',
       period7d: '7D',
       period30d: '30D',
-      collapsedLabel: 'STATS',
+      collapsedLabel: 'LIVE STATS',
       expandLabel: 'Show live stats',
       minimizeLabel: 'Minimize'
     }
@@ -340,7 +340,7 @@ export const translations = {
       period24h: '24H',
       period7d: '7D',
       period30d: '30D',
-      collapsedLabel: 'STATS',
+      collapsedLabel: 'LIVE STATS',
       expandLabel: 'Mostrar estatísticas',
       minimizeLabel: 'Minimizar'
     }
