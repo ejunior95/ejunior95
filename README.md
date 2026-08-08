@@ -20,8 +20,6 @@
 
 ---
 
-## 👨‍💻 Sobre Mim
-
 ```typescript
 // developer.config.ts
 const greatDeveloper = {
@@ -35,8 +33,6 @@ const greatDeveloper = {
   focus: ["Backend Development", "Frontend Architecture", "AI & LLM"]
 };
 ```
-
-🚀 Atualmente trabalho no projeto **Divida Técnica, na Plataforma de Qualidade na empresa cliente**, desenvolvendo plataformas para automação de testes e melhorias de qualidade de código.
 
 ---
 
